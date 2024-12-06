@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "ERBLLV0MQ9DJBK26E1wywTtFwhxfanwGqRVQvFcPu90=",
+  "Source": "API",
+  "BasePath": "_content/API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "API\\wwwroot",
+      "Source": "API",
+      "ContentRoot": "C:\\Users\\ahmed\\Desktop\\Elmansa\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
