@@ -1,0 +1,1 @@
+ M:\\Coding\ projects\\Flutter\\elmanasa\\.dart_tool\\flutter_build\\868e8612746788e4c359fa99f73c8cfd\\native_assets.yaml: 
