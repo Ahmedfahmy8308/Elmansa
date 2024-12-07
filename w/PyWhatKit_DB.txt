@@ -1,0 +1,1152 @@
+Date: 6/11/2024
+Time: 2:11
+Group ID: 201015205654
+Image: output_images\1.jpg
+Caption: Here is your QR code
+--------------------
+Date: 6/11/2024
+Time: 2:11
+Group ID: 201220228383
+Image: output_images\2.jpg
+Caption: Here is your QR code
+--------------------
+Date: 6/11/2024
+Time: 2:12
+Group ID: 201020479938
+Image: output_images\3.jpg
+Caption: Here is your QR code
+--------------------
+Date: 6/11/2024
+Time: 2:13
+Group ID: 201015205654
+Image: output_images\1.jpg
+Caption: Here is your QR code
+--------------------
+Date: 6/11/2024
+Time: 2:13
+Group ID: 201220228383
+Image: output_images\2.jpg
+Caption: Here is your QR code
+--------------------
+Date: 6/11/2024
+Time: 2:14
+Group ID: 201015205654
+Image: output_images\1.jpg
+Caption: 
+--------------------
+Date: 6/11/2024
+Time: 2:15
+Phone Number: +2001015205654
+Image: output_images\1.jpg
+Caption: 
+--------------------
+Date: 6/11/2024
+Time: 2:15
+Phone Number: +2001015205654
+Image: output_images\2.jpg
+Caption: 
+--------------------
+Date: 6/11/2024
+Time: 2:15
+Phone Number: +2001015205654
+Image: output_images\3.jpg
+Caption: 
+--------------------
+Date: 6/11/2024
+Time: 2:16
+Phone Number: +201015205654
+Image: output_images\1.jpg
+Caption: 
+--------------------
+Date: 6/11/2024
+Time: 2:20
+Phone Number: +201015205654
+Image: output_images\1.jpg
+Caption: Here is your QR code
+--------------------
+Date: 6/11/2024
+Time: 2:20
+Phone Number: +201220228383
+Image: output_images\2.jpg
+Caption: Here is your QR code
+--------------------
+Date: 6/11/2024
+Time: 2:20
+Phone Number: +201020479938
+Image: output_images\3.jpg
+Caption: Here is your QR code
+--------------------
+Date: 6/11/2024
+Time: 2:25
+Phone Number: +201015205654
+Image: output_images\1.jpg
+Caption: Dear participant, Please find your QR code for the Welcome Day event. We are excited to have you with us! 🎉Looking forward to seeing you tomorrow. Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch (KSB)
+--------------------
+Date: 6/11/2024
+Time: 2:26
+Phone Number: +201220228383
+Image: output_images\2.jpg
+Caption: Dear participant, Please find your QR code for the Welcome Day event. We are excited to have you with us! 🎉Looking forward to seeing you tomorrow. Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch (KSB)
+--------------------
+Date: 6/11/2024
+Time: 2:27
+Phone Number: +201015205654
+Image: output_images\1.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 2:27
+Phone Number: +201220228383
+Image: output_images\2.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 2:29
+Phone Number: +201017798979
+Image: output_images\1.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 2:29
+Phone Number: +201065562301
+Image: output_images\2.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 2:30
+Phone Number: +201099014106
+Image: output_images\3.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 2:30
+Phone Number: +201013226110
+Image: output_images\4.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 2:31
+Phone Number: +201068748795
+Image: output_images\5.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 2:31
+Phone Number: +201019531392
+Image: output_images\6.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 2:31
+Phone Number: +201096678823
+Image: output_images\7.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:29
+Phone Number: +201065562301
+Image: output_images\1.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:29
+Phone Number: +201017798979
+Image: output_images\2.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:30
+Phone Number: +201099014106
+Image: output_images\3.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:30
+Phone Number: +201065562301
+Image: output_images\1.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:31
+Phone Number: +201017798979
+Image: output_images\2.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:32
+Phone Number: +201065562301
+Image: output_images\1.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:32
+Phone Number: +201065562301
+Image: output_images\1.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:34
+Phone Number: +201065562301
+Image: output_images\1.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:35
+Phone Number: +201065562301
+Image: output_images\1.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:36
+Phone Number: +201065562301
+Image: output_images\1.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:36
+Phone Number: +201017798979
+Image: output_images\2.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:37
+Phone Number: +201099014106
+Image: output_images\3.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:37
+Phone Number: +201013226110
+Image: output_images\4.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:37
+Phone Number: +201096678823
+Image: output_images\5.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:38
+Phone Number: +201019531392
+Image: output_images\6.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:38
+Phone Number: +201068748795
+Image: output_images\7.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:38
+Phone Number: +201002964581
+Image: output_images\8.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:39
+Phone Number: +201273720091
+Image: output_images\9.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:39
+Phone Number: +201281167898
+Image: output_images\10.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:39
+Phone Number: +201019389953
+Image: output_images\11.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:40
+Phone Number: +201091588785
+Image: output_images\12.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:40
+Phone Number: +201096345925
+Image: output_images\13.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:40
+Phone Number: +201097121999
+Image: output_images\14.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:41
+Phone Number: +201068522950
+Image: output_images\15.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:41
+Phone Number: +201094209939
+Image: output_images\16.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:42
+Phone Number: +201022425648
+Image: output_images\17.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:42
+Phone Number: +201009202364
+Image: output_images\18.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:42
+Phone Number: +201018786407
+Image: output_images\19.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:43
+Phone Number: +201212483853
+Image: output_images\20.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:43
+Phone Number: +201091094406
+Image: output_images\21.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:43
+Phone Number: +201008710208
+Image: output_images\22.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:44
+Phone Number: +201021330018
+Image: output_images\23.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:44
+Phone Number: +201026829678
+Image: output_images\24.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:44
+Phone Number: +201212763271
+Image: output_images\25.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:45
+Phone Number: +201012394428
+Image: output_images\26.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:45
+Phone Number: +201060400986
+Image: output_images\27.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:45
+Phone Number: +201069403392
+Image: output_images\28.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:46
+Phone Number: +201050589451
+Image: output_images\29.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:46
+Phone Number: +201080281820
+Image: output_images\30.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:47
+Phone Number: +201068970160
+Image: output_images\31.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:47
+Phone Number: +201017945612
+Image: output_images\32.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:47
+Phone Number: +201068212937
+Image: output_images\33.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:48
+Phone Number: +201552837489
+Image: output_images\34.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:48
+Phone Number: +201015942476
+Image: output_images\35.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:48
+Phone Number: +201011951808
+Image: output_images\36.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:49
+Phone Number: +201010992539
+Image: output_images\37.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:49
+Phone Number: +201095400534
+Image: output_images\38.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:49
+Phone Number: +201095633345
+Image: output_images\39.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:50
+Phone Number: +201095242706
+Image: output_images\40.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:50
+Phone Number: +201017822954
+Image: output_images\41.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:50
+Phone Number: +201000342166
+Image: output_images\42.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:51
+Phone Number: +201069391055
+Image: output_images\43.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:51
+Phone Number: +201554505061
+Image: output_images\44.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:52
+Phone Number: +201070616442
+Image: output_images\45.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:52
+Phone Number: +201024424454
+Image: output_images\46.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:52
+Phone Number: +201068734930
+Image: output_images\47.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:53
+Phone Number: +201061840493
+Image: output_images\48.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:53
+Phone Number: +201024358550
+Image: output_images\49.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:53
+Phone Number: +201205100259
+Image: output_images\50.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:54
+Phone Number: +201060352543
+Image: output_images\51.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:54
+Phone Number: +201069400325
+Image: output_images\52.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:54
+Phone Number: +201029011019
+Image: output_images\53.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:55
+Phone Number: +201029066950
+Image: output_images\54.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:55
+Phone Number: +201552939126
+Image: output_images\55.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:56
+Phone Number: +201011361334
+Image: output_images\56.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:56
+Phone Number: +201278957628
+Image: output_images\57.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:56
+Phone Number: +201068415016
+Image: output_images\58.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:57
+Phone Number: +201007843350
+Image: output_images\59.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:57
+Phone Number: +201018181533
+Image: output_images\60.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:57
+Phone Number: +201093880150
+Image: output_images\61.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:58
+Phone Number: +201067688980
+Image: output_images\62.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:58
+Phone Number: +201014237047
+Image: output_images\63.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:58
+Phone Number: +201012561689
+Image: output_images\64.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:59
+Phone Number: +201098704541
+Image: output_images\65.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:59
+Phone Number: +201094909648
+Image: output_images\66.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 3:59
+Phone Number: +201062322683
+Image: output_images\67.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:0
+Phone Number: +201068547311
+Image: output_images\68.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:0
+Phone Number: +201222949722
+Image: output_images\69.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:1
+Phone Number: +201026040004
+Image: output_images\70.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:1
+Phone Number: +201004029208
+Image: output_images\71.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:1
+Phone Number: +201006853192
+Image: output_images\72.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:2
+Phone Number: +201093556456
+Image: output_images\73.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:2
+Phone Number: +201060348610
+Image: output_images\74.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:2
+Phone Number: +201063462517
+Image: output_images\75.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:3
+Phone Number: +201097916328
+Image: output_images\76.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:3
+Phone Number: +201200637257
+Image: output_images\77.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:3
+Phone Number: +201080122169
+Image: output_images\78.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:4
+Phone Number: +201113177078
+Image: output_images\79.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:4
+Phone Number: +201027596119
+Image: output_images\80.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:4
+Phone Number: +201030915436
+Image: output_images\81.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:5
+Phone Number: +201019317887
+Image: output_images\82.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:5
+Phone Number: +201013661380
+Image: output_images\83.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:6
+Phone Number: +201069321247
+Image: output_images\84.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:6
+Phone Number: +201126319664
+Image: output_images\85.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:6
+Phone Number: +201000619081
+Image: output_images\86.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:7
+Phone Number: +201033968787
+Image: output_images\87.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:7
+Phone Number: +201027365033
+Image: output_images\88.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:7
+Phone Number: +201022554265
+Image: output_images\89.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:8
+Phone Number: +201050512266
+Image: output_images\90.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:8
+Phone Number: +201220906590
+Image: output_images\91.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:8
+Phone Number: +201025423227
+Image: output_images\92.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:9
+Phone Number: +201016280180
+Image: output_images\93.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:9
+Phone Number: +201063931785
+Image: output_images\94.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:10
+Phone Number: +201092268785
+Image: output_images\95.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:10
+Phone Number: +201050485529
+Image: output_images\96.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:10
+Phone Number: +201143898382
+Image: output_images\97.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:11
+Phone Number: +201554727390
+Image: output_images\98.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:11
+Phone Number: +201551713043
+Image: output_images\99.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:11
+Phone Number: +201005707613
+Image: output_images\100.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:12
+Phone Number: +201093996895
+Image: output_images\101.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:12
+Phone Number: +201016988251
+Image: output_images\102.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:12
+Phone Number: +201014170653
+Image: output_images\103.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:13
+Phone Number: +201027677191
+Image: output_images\104.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:13
+Phone Number: +201028654886
+Image: output_images\105.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:13
+Phone Number: +201501628880
+Image: output_images\106.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:14
+Phone Number: +201068267107
+Image: output_images\107.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:14
+Phone Number: +201063516191
+Image: output_images\108.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:15
+Phone Number: +201001603997
+Image: output_images\109.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:15
+Phone Number: +201027644872
+Image: output_images\110.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:15
+Phone Number: +201015763371
+Image: output_images\111.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:16
+Phone Number: +201550034497
+Image: output_images\112.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:16
+Phone Number: +201019240091
+Image: output_images\113.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:16
+Phone Number: +201061759959
+Image: output_images\114.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:17
+Phone Number: +201210886296
+Image: output_images\115.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:17
+Phone Number: +201118847520
+Image: output_images\116.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:17
+Phone Number: +201022667307
+Image: output_images\117.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:18
+Phone Number: +201019959832
+Image: output_images\118.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:18
+Phone Number: +201026368153
+Image: output_images\119.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:19
+Phone Number: +201012910528
+Image: output_images\120.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:19
+Phone Number: +201025260448
+Image: output_images\121.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:19
+Phone Number: +201096321771
+Image: output_images\122.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:20
+Phone Number: +201020350426
+Image: output_images\123.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:20
+Phone Number: +201206703855
+Image: output_images\124.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:20
+Phone Number: +201110574062
+Image: output_images\125.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:21
+Phone Number: +201096357379
+Image: output_images\126.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:21
+Phone Number: +201019613862
+Image: output_images\127.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:21
+Phone Number: +201010942213
+Image: output_images\128.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:22
+Phone Number: +201070284088
+Image: output_images\129.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:22
+Phone Number: +201281427908
+Image: output_images\130.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:22
+Phone Number: +201101094447
+Image: output_images\131.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:23
+Phone Number: +201025627310
+Image: output_images\132.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:23
+Phone Number: +201068796007
+Image: output_images\133.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:24
+Phone Number: +201001788679
+Image: output_images\134.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:24
+Phone Number: +201221362317
+Image: output_images\135.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:24
+Phone Number: +201556862615
+Image: output_images\136.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:25
+Phone Number: +201008465012
+Image: output_images\137.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:25
+Phone Number: +201019147974
+Image: output_images\138.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:25
+Phone Number: +201015767622
+Image: output_images\139.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:26
+Phone Number: +201507203633
+Image: output_images\140.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:26
+Phone Number: +201024374459
+Image: output_images\141.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:26
+Phone Number: +201027785567
+Image: output_images\142.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:27
+Phone Number: +201222950498
+Image: output_images\143.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:27
+Phone Number: +201069708809
+Image: output_images\144.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:28
+Phone Number: +201060415064
+Image: output_images\145.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:28
+Phone Number: +201030210442
+Image: output_images\146.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:28
+Phone Number: +201026898564
+Image: output_images\147.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:29
+Phone Number: +201007429970
+Image: output_images\148.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:29
+Phone Number: +201020868756
+Image: output_images\149.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:29
+Phone Number: +201067640820
+Image: output_images\150.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:30
+Phone Number: +201093482543
+Image: output_images\151.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:30
+Phone Number: +201020954764
+Image: output_images\152.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:30
+Phone Number: +201550786766
+Image: output_images\153.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:31
+Phone Number: +201000943936
+Image: output_images\154.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:31
+Phone Number: +201064139909
+Image: output_images\155.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:32
+Phone Number: +201061004047
+Image: output_images\156.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:32
+Phone Number: +201029481921
+Image: output_images\157.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:32
+Phone Number: +201064223048
+Image: output_images\158.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
+Date: 6/11/2024
+Time: 4:33
+Phone Number: +201025346104
+Image: output_images\159.jpg
+Caption: Dear IEEAns, We are thrilled to share your QR code for the upcoming Welcome Day event! Get ready to join us tomorrow for an exciting experience. 🎉Looking forward to seeing you all there! Best regards, Ahmed Fahmy General Secretary, IEEE Kafrelsheikh Student Branch
+--------------------
