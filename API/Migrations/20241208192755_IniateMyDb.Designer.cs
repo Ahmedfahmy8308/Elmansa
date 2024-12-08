@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241208183414_iniateDB")]
-    partial class iniateDB
+    [Migration("20241208192755_IniateMyDb")]
+    partial class IniateMyDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -189,7 +189,7 @@ namespace API.Migrations
 
                     b.HasIndex("QuizID");
 
-                    b.ToTable("GroupQuiz");
+                    b.ToTable("GroupQuizs");
                 });
 
             modelBuilder.Entity("API.Entities.Lesson", b =>

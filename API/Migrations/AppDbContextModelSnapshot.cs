@@ -186,7 +186,7 @@ namespace API.Migrations
 
                     b.HasIndex("QuizID");
 
-                    b.ToTable("GroupQuiz");
+                    b.ToTable("GroupQuizs");
                 });
 
             modelBuilder.Entity("API.Entities.Lesson", b =>

@@ -3,72 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\migrations\\20241208183414_iniatedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:migrations\\20241208183414_iniatedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\controllers\\teacher\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:controllers\\teacher\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\dto\\teacher\\group_add_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:dto\\teacher\\group_add_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Migrations\\20241208183233_EditDB2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241208183233_EditDB2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\entities\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:entities\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\data\\config\\quizconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:data\\config\\quizconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\data\\config\\groupconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:data\\config\\groupconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\data\\config\\materialconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:data\\config\\materialconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\data\\config\\groupquizconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:data\\config\\groupquizconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\data\\config\\lessonmaterialconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:data\\config\\lessonmaterialconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\entities\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:entities\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\entities\\assignmentsubmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:entities\\assignmentsubmission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Migrations\\20241208192755_IniateMyDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20241208192755_IniateMyDb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\entities\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:entities\\assignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\entities\\lessonmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:entities\\lessonmaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\controllers\\teacher\\allowedstudentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:controllers\\teacher\\allowedstudentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,212 +34,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20241208183414_iniateDB.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Migrations\\20241208183414_iniateDB.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241208183414_iniateDB.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Migrations\\20241208183414_iniateDB.cs",
-              "RelativeToolTip": "Migrations\\20241208183414_iniateDB.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:34:14.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "20241208183233_EditDB2.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Migrations\\20241208183233_EditDB2.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241208183233_EditDB2.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Migrations\\20241208183233_EditDB2.cs",
-              "RelativeToolTip": "Migrations\\20241208183233_EditDB2.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:32:33.688Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GroupConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\GroupConfiguration.cs",
-              "RelativeDocumentMoniker": "Data\\Config\\GroupConfiguration.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\GroupConfiguration.cs",
-              "RelativeToolTip": "Data\\Config\\GroupConfiguration.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAA0wDEAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:26:21.323Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MaterialConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\MaterialConfiguration.cs",
-              "RelativeDocumentMoniker": "Data\\Config\\MaterialConfiguration.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\MaterialConfiguration.cs",
-              "RelativeToolTip": "Data\\Config\\MaterialConfiguration.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:25:04.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "QuizConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\QuizConfiguration.cs",
-              "RelativeDocumentMoniker": "Data\\Config\\QuizConfiguration.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\QuizConfiguration.cs",
-              "RelativeToolTip": "Data\\Config\\QuizConfiguration.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwBoAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:24:27.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAA0wCcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T22:16:54.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GroupQuizConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\GroupQuizConfiguration.cs",
-              "RelativeDocumentMoniker": "Data\\Config\\GroupQuizConfiguration.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\GroupQuizConfiguration.cs",
-              "RelativeToolTip": "Data\\Config\\GroupQuizConfiguration.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA0wAgAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:24:02.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LessonMaterialConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\LessonMaterialConfiguration.cs",
-              "RelativeDocumentMoniker": "Data\\Config\\LessonMaterialConfiguration.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\LessonMaterialConfiguration.cs",
-              "RelativeToolTip": "Data\\Config\\LessonMaterialConfiguration.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA0wBsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:18:37.623Z"
+              "WhenOpened": "2024-12-08T20:08:21.632Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Quiz.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\Quiz.cs",
-              "RelativeDocumentMoniker": "Entities\\Quiz.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\Quiz.cs",
-              "RelativeToolTip": "Entities\\Quiz.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA5wBUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:22:25.328Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Group.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\Group.cs",
               "RelativeDocumentMoniker": "Entities\\Group.cs",
               "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\Group.cs",
               "RelativeToolTip": "Entities\\Group.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA5wBwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAA5wBoAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:21:16.891Z"
+              "WhenOpened": "2024-12-08T19:47:09.422Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LessonMaterial.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\LessonMaterial.cs",
-              "RelativeDocumentMoniker": "Entities\\LessonMaterial.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\LessonMaterial.cs",
-              "RelativeToolTip": "Entities\\LessonMaterial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Group_Add_dto.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\DTO\\Teacher\\Group_Add_dto.cs",
+              "RelativeDocumentMoniker": "DTO\\Teacher\\Group_Add_dto.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\DTO\\Teacher\\Group_Add_dto.cs",
+              "RelativeToolTip": "DTO\\Teacher\\Group_Add_dto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:17:31.025Z"
+              "WhenOpened": "2024-12-08T19:46:56.748Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AssignmentSubmission.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\AssignmentSubmission.cs",
-              "RelativeDocumentMoniker": "Entities\\AssignmentSubmission.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\AssignmentSubmission.cs",
-              "RelativeToolTip": "Entities\\AssignmentSubmission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "GroupController.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Controllers\\Teacher\\GroupController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Teacher\\GroupController.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Controllers\\Teacher\\GroupController.cs",
+              "RelativeToolTip": "Controllers\\Teacher\\GroupController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAD0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:03:30.816Z"
+              "WhenOpened": "2024-12-08T19:35:26.746Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Assignment.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\Assignment.cs",
-              "RelativeDocumentMoniker": "Entities\\Assignment.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\Assignment.cs",
-              "RelativeToolTip": "Entities\\Assignment.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "20241208192755_IniateMyDb.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Migrations\\20241208192755_IniateMyDb.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241208192755_IniateMyDb.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Migrations\\20241208192755_IniateMyDb.cs",
+              "RelativeToolTip": "Migrations\\20241208192755_IniateMyDb.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:02:17.314Z"
+              "WhenOpened": "2024-12-08T19:27:55.682Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-08T14:12:30.171Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "API.csproj",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\API.csproj",
-              "RelativeDocumentMoniker": "API.csproj",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\API.csproj",
-              "RelativeToolTip": "API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-08T14:12:01.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "API.http",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\API.http",
-              "RelativeDocumentMoniker": "API.http",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\API.http",
-              "RelativeToolTip": "API.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-12-08T13:25:49.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AllowedStudentController.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Controllers\\Teacher\\AllowedStudentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Teacher\\AllowedStudentController.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Controllers\\Teacher\\AllowedStudentController.cs",
-              "RelativeToolTip": "Controllers\\Teacher\\AllowedStudentController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBMAAAARAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:56:14.172Z"
+              "WhenOpened": "2024-12-08T19:25:15.604Z",
+              "EditorCaption": ""
             }
           ]
         }

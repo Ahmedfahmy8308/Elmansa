@@ -1,5 +1,8 @@
 Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Tools
 Microsoft.EntityFrameworkCore.Design 
+Microsoft.EntityFrameworkCore.jsonpatch 
+Microsoft.EntityFrameworkCore.newtonsoftjson 
+
 
 Scaffold-DbContext "Data Source=FAHMY;Initial Catalog=Elmansa_api;Integrated Security=True;Encrypt=True;Trust Server Certificate=True"   Microsoft.EntityFrameworkCore.SqlServer -DataAnnotations -outputDir Models -contextDir Data -force

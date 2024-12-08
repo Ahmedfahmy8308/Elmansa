@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace API.Migrations
 {
     /// <inheritdoc />
-    public partial class iniateDB : Migration
+    public partial class IniateMyDb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -133,7 +133,7 @@ namespace API.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "GroupQuiz",
+                name: "GroupQuizs",
                 columns: table => new
                 {
                     GroupID = table.Column<int>(type: "int", nullable: false),
@@ -141,15 +141,15 @@ namespace API.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_GroupQuiz", x => new { x.GroupID, x.QuizID });
+                    table.PrimaryKey("PK_GroupQuizs", x => new { x.GroupID, x.QuizID });
                     table.ForeignKey(
-                        name: "FK_GroupQuiz_Groups_QuizID",
+                        name: "FK_GroupQuizs_Groups_QuizID",
                         column: x => x.QuizID,
                         principalTable: "Groups",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_GroupQuiz_Quizs_GroupID",
+                        name: "FK_GroupQuizs_Quizs_GroupID",
                         column: x => x.GroupID,
                         principalTable: "Quizs",
                         principalColumn: "ID",
@@ -429,8 +429,8 @@ namespace API.Migrations
                 column: "StudentId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_GroupQuiz_QuizID",
-                table: "GroupQuiz",
+                name: "IX_GroupQuizs_QuizID",
+                table: "GroupQuizs",
                 column: "QuizID");
 
             migrationBuilder.CreateIndex(
@@ -506,7 +506,7 @@ namespace API.Migrations
                 name: "Attendances");
 
             migrationBuilder.DropTable(
-                name: "GroupQuiz");
+                name: "GroupQuizs");
 
             migrationBuilder.DropTable(
                 name: "LessonMaterials");

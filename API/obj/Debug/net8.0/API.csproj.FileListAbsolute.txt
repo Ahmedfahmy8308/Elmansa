@@ -337,3 +337,5 @@ C:\Users\ahmed\Desktop\Elmansa\Elmansa\API\obj\Debug\net8.0\refint\API.dll
 C:\Users\ahmed\Desktop\Elmansa\Elmansa\API\obj\Debug\net8.0\API.pdb
 C:\Users\ahmed\Desktop\Elmansa\Elmansa\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 C:\Users\ahmed\Desktop\Elmansa\Elmansa\API\obj\Debug\net8.0\ref\API.dll
+C:\Users\ahmed\Desktop\Elmansa\Elmansa\API\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ahmed\Desktop\Elmansa\Elmansa\API\bin\Debug\net8.0\Newtonsoft.Json.dll
