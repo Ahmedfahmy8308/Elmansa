@@ -1,3 +1,4 @@
+import 'package:elmanasa/helper/notification.dart';
 import 'package:flutter/material.dart';
 import 'package:elmanasa/view/screens/utils.dart';
 
@@ -99,6 +100,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ),
                                   ),
                                 ),
+                                NotificationButton(),
                               ],
                             ),
                             Padding(
