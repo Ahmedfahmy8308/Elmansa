@@ -4,7 +4,7 @@
             "outputFile": "com.example.elmanasa.app-mergeDebugResources-25:/values-night-v31/values-night-v31.xml",
             "map": [
                 {
-                    "source": "M:\\Coding projects\\Flutter\\elmanasa\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
+                    "source": "M:\\Coding projects\\Flutter\\Elmansa2\\Mobile\\android\\app\\src\\main\\res\\values-night-v31\\styles.xml",
                     "from": {
                         "startLines": "3,15",
                         "startColumns": "4,4",

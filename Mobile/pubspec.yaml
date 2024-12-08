@@ -37,6 +37,7 @@ dependencies:
   font_awesome_flutter: ^10.4.0
   image_picker: ^1.1.2
   permission_handler: ^10.2.0
+  http: ^1.2.2
 
 flutter_native_splash:
   color: "#FFFFFF"
@@ -80,8 +81,13 @@ flutter:
     - assets\images\c1.jpg
     - assets\images\c2.jpg
     - assets\images\c3.jpg
+    - assets\images\c4.jpg
+    - assets\images\c5.jpg
+    - assets\images\c6.jpg
     - assets\images\course3.webp
     - assets\images\course4.webp
+    - assets\images\me.jpg
+
 
 
 

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/gestures.dart';
@@ -9,7 +8,8 @@ class InputField extends StatelessWidget {
   final TextEditingController? controller;
   final TextInputType? keyboardType;
   final String? Function(String?)? validator;
- final IconData iconn;
+  final IconData iconn;
+  Color ?color;
   InputField({
     required this.labelText,
     required this.hintText,
@@ -17,7 +17,7 @@ class InputField extends StatelessWidget {
     this.controller,
     this.keyboardType,
     this.validator,
-
+    this.color,
   });
 
   @override
@@ -29,7 +29,9 @@ class InputField extends StatelessWidget {
         keyboardType: keyboardType,
         validator: validator,
         decoration: InputDecoration(
-           prefixIcon: Icon(iconn),
+          fillColor: color,
+          
+          prefixIcon: Icon(iconn),
           labelText: labelText,
           hintText: hintText,
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
@@ -46,7 +48,7 @@ class PasswordField extends StatelessWidget {
   final bool isObscured;
   final VoidCallback toggleVisibility;
   final String? Function(String?)? validator;
-   final IconData iconn;
+  final IconData iconn;
 
   PasswordField({
     this.controller,
@@ -80,6 +82,7 @@ class PasswordField extends StatelessWidget {
     );
   }
 }
+
 class RichTextt extends StatelessWidget {
   String text1;
   String text2;
@@ -108,6 +111,7 @@ class RichTextt extends StatelessWidget {
         ]));
   }
 }
+
 class Button extends StatelessWidget {
   final String action;
   final VoidCallback onPressed;

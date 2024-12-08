@@ -1,9 +1,9 @@
-#Sat Dec 07 20:09:44 EET 2024
-base.0=M\:\\Coding projects\\Flutter\\elmanasa\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=M\:\\Coding projects\\Flutter\\elmanasa\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
-base.2=M\:\\Coding projects\\Flutter\\elmanasa\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.3=M\:\\Coding projects\\Flutter\\elmanasa\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.4=M\:\\Coding projects\\Flutter\\elmanasa\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+#Sun Dec 08 01:19:08 EET 2024
+base.0=M\:\\Coding projects\\Flutter\\Elmansa2\\Mobile\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=M\:\\Coding projects\\Flutter\\Elmansa2\\Mobile\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.2=M\:\\Coding projects\\Flutter\\Elmansa2\\Mobile\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.3=M\:\\Coding projects\\Flutter\\Elmansa2\\Mobile\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.4=M\:\\Coding projects\\Flutter\\Elmansa2\\Mobile\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=0/classes.dex
