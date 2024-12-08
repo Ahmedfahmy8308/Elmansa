@@ -21,13 +21,13 @@ namespace API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            var context = builder.Services.BuildServiceProvider().GetService<AppDbContext>();
+            //var context = builder.Services.BuildServiceProvider().GetService<AppDbContext>();
             //context.Database.EnsureCreated();
             //context.Database.Migrate();
             //context.Database.EnsureDeleted();
 
-            var sql = context.Database.GenerateCreateScript();
-            Console.WriteLine(sql);
+            //var sql = context.Database.GenerateCreateScript();
+            //Console.WriteLine(sql);
 
             var app = builder.Build();
 
@@ -44,6 +44,7 @@ namespace API
             app.MapControllers();
 
             app.Run();
+
         }
     }
 }
