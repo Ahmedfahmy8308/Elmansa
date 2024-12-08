@@ -66,6 +66,9 @@ namespace API.Migrations
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("FilePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("LessonID")
                         .HasColumnType("int");
 
@@ -98,9 +101,6 @@ namespace API.Migrations
                     b.Property<string>("FilePath")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<double?>("Grade")
-                        .HasColumnType("float");
 
                     b.Property<int>("StudentID")
                         .HasColumnType("int");
@@ -172,6 +172,21 @@ namespace API.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Groups");
+                });
+
+            modelBuilder.Entity("API.Entities.GroupQuiz", b =>
+                {
+                    b.Property<int>("GroupID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("QuizID")
+                        .HasColumnType("int");
+
+                    b.HasKey("GroupID", "QuizID");
+
+                    b.HasIndex("QuizID");
+
+                    b.ToTable("GroupQuiz");
                 });
 
             modelBuilder.Entity("API.Entities.Lesson", b =>
@@ -329,8 +344,6 @@ namespace API.Migrations
                         .HasColumnType("nvarchar(200)");
 
                     b.HasKey("ID");
-
-                    b.HasIndex("GroupId");
 
                     b.ToTable("Quizs");
                 });
@@ -599,6 +612,25 @@ namespace API.Migrations
                     b.Navigation("Student");
                 });
 
+            modelBuilder.Entity("API.Entities.GroupQuiz", b =>
+                {
+                    b.HasOne("API.Entities.Quiz", "Quiz")
+                        .WithMany("Groups")
+                        .HasForeignKey("GroupID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("API.Entities.Group", "Group")
+                        .WithMany("Quizzes")
+                        .HasForeignKey("QuizID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Group");
+
+                    b.Navigation("Quiz");
+                });
+
             modelBuilder.Entity("API.Entities.Lesson", b =>
                 {
                     b.HasOne("API.Entities.Group", "Group")
@@ -633,16 +665,6 @@ namespace API.Migrations
                 {
                     b.HasOne("API.Entities.Group", "Group")
                         .WithMany("Notifications")
-                        .HasForeignKey("GroupId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
-                    b.Navigation("Group");
-                });
-
-            modelBuilder.Entity("API.Entities.Quiz", b =>
-                {
-                    b.HasOne("API.Entities.Group", "Group")
-                        .WithMany("Quizzes")
                         .HasForeignKey("GroupId")
                         .OnDelete(DeleteBehavior.SetNull);
 
@@ -771,6 +793,8 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Entities.Quiz", b =>
                 {
+                    b.Navigation("Groups");
+
                     b.Navigation("QuizQuestions");
 
                     b.Navigation("QuizSubmissions");

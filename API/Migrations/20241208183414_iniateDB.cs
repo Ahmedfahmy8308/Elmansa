@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace API.Migrations
 {
     /// <inheritdoc />
-    public partial class intiatefirstdb : Migration
+    public partial class iniateDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -42,6 +42,25 @@ namespace API.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Materials", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Quizs",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    IsPublished = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
+                    GroupId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Quizs", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
@@ -114,28 +133,48 @@ namespace API.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Quizs",
+                name: "GroupQuiz",
+                columns: table => new
+                {
+                    GroupID = table.Column<int>(type: "int", nullable: false),
+                    QuizID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_GroupQuiz", x => new { x.GroupID, x.QuizID });
+                    table.ForeignKey(
+                        name: "FK_GroupQuiz_Groups_QuizID",
+                        column: x => x.QuizID,
+                        principalTable: "Groups",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_GroupQuiz_Quizs_GroupID",
+                        column: x => x.GroupID,
+                        principalTable: "Quizs",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "QuizQuestions",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CreationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IsPublished = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
-                    GroupId = table.Column<int>(type: "int", nullable: true)
+                    QuizId = table.Column<int>(type: "int", nullable: false),
+                    Text = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CorrectAnswer = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Quizs", x => x.ID);
+                    table.PrimaryKey("PK_QuizQuestions", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Quizs_Groups_GroupId",
-                        column: x => x.GroupId,
-                        principalTable: "Groups",
+                        name: "FK_QuizQuestions_Quizs_QuizId",
+                        column: x => x.QuizId,
+                        principalTable: "Quizs",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.SetNull);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -187,6 +226,7 @@ namespace API.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FilePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LessonID = table.Column<int>(type: "int", nullable: false)
@@ -227,22 +267,22 @@ namespace API.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "QuizQuestions",
+                name: "QuizOptions",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    QuizId = table.Column<int>(type: "int", nullable: false),
-                    Text = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CorrectAnswer = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    QuestionId = table.Column<int>(type: "int", nullable: false),
+                    OptionText = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsCorrect = table.Column<bool>(type: "bit", nullable: false, defaultValue: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_QuizQuestions", x => x.ID);
+                    table.PrimaryKey("PK_QuizOptions", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_QuizQuestions_Quizs_QuizId",
-                        column: x => x.QuizId,
-                        principalTable: "Quizs",
+                        name: "FK_QuizOptions_QuizQuestions_QuestionId",
+                        column: x => x.QuestionId,
+                        principalTable: "QuizQuestions",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -339,8 +379,7 @@ namespace API.Migrations
                     StudentID = table.Column<int>(type: "int", nullable: false),
                     AssignmentID = table.Column<int>(type: "int", nullable: false),
                     FilePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    SubmissionDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Grade = table.Column<double>(type: "float", nullable: true)
+                    SubmissionDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -355,27 +394,6 @@ namespace API.Migrations
                         name: "FK_AssignmentSubmissions_Students_StudentID",
                         column: x => x.StudentID,
                         principalTable: "Students",
-                        principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "QuizOptions",
-                columns: table => new
-                {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    QuestionId = table.Column<int>(type: "int", nullable: false),
-                    OptionText = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    IsCorrect = table.Column<bool>(type: "bit", nullable: false, defaultValue: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_QuizOptions", x => x.ID);
-                    table.ForeignKey(
-                        name: "FK_QuizOptions_QuizQuestions_QuestionId",
-                        column: x => x.QuestionId,
-                        principalTable: "QuizQuestions",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -411,6 +429,11 @@ namespace API.Migrations
                 column: "StudentId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_GroupQuiz_QuizID",
+                table: "GroupQuiz",
+                column: "QuizID");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_LessonMaterials_MaterialID",
                 table: "LessonMaterials",
                 column: "MaterialID");
@@ -434,11 +457,6 @@ namespace API.Migrations
                 name: "IX_QuizQuestions_QuizId",
                 table: "QuizQuestions",
                 column: "QuizId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Quizs_GroupId",
-                table: "Quizs",
-                column: "GroupId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_QuizSubmissions_QuizID",
@@ -486,6 +504,9 @@ namespace API.Migrations
 
             migrationBuilder.DropTable(
                 name: "Attendances");
+
+            migrationBuilder.DropTable(
+                name: "GroupQuiz");
 
             migrationBuilder.DropTable(
                 name: "LessonMaterials");

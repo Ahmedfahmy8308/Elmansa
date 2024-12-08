@@ -19,7 +19,7 @@ public class Quiz
 
     public int? GroupId { get; set; }
 
-    public Group? Group { get; set; }
+    public ICollection<GroupQuiz> Groups { get; set; }
     public ICollection<QuizQuestion>? QuizQuestions { get; set; }
     public ICollection<QuizSubmission>? QuizSubmissions { get; set; }
 }

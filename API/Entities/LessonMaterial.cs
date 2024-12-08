@@ -14,3 +14,4 @@ public class LessonMaterial
     public Lesson Lesson { get; set; } = null!;
     public Material Material { get; set; } = null!;
 }
+
