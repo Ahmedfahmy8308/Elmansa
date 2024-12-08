@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\migrations\\20241208183414_iniatedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:migrations\\20241208183414_iniatedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -74,11 +78,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "20241208183414_iniateDB.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Migrations\\20241208183414_iniateDB.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241208183414_iniateDB.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Migrations\\20241208183414_iniateDB.cs",
+              "RelativeToolTip": "Migrations\\20241208183414_iniateDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T18:34:14.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "20241208183233_EditDB2.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Migrations\\20241208183233_EditDB2.cs",
               "RelativeDocumentMoniker": "Migrations\\20241208183233_EditDB2.cs",
@@ -86,12 +103,11 @@
               "RelativeToolTip": "Migrations\\20241208183233_EditDB2.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:32:33.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:32:33.688Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "GroupConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\GroupConfiguration.cs",
               "RelativeDocumentMoniker": "Data\\Config\\GroupConfiguration.cs",
@@ -99,12 +115,11 @@
               "RelativeToolTip": "Data\\Config\\GroupConfiguration.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAA0wDEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:26:21.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:26:21.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MaterialConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\MaterialConfiguration.cs",
               "RelativeDocumentMoniker": "Data\\Config\\MaterialConfiguration.cs",
@@ -112,12 +127,11 @@
               "RelativeToolTip": "Data\\Config\\MaterialConfiguration.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:25:04.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:25:04.879Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "QuizConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\QuizConfiguration.cs",
               "RelativeDocumentMoniker": "Data\\Config\\QuizConfiguration.cs",
@@ -125,12 +139,11 @@
               "RelativeToolTip": "Data\\Config\\QuizConfiguration.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAYwBoAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:24:27.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:24:27.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -138,12 +151,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T22:16:54.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T22:16:54.439Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GroupQuizConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\GroupQuizConfiguration.cs",
               "RelativeDocumentMoniker": "Data\\Config\\GroupQuizConfiguration.cs",
@@ -151,12 +163,11 @@
               "RelativeToolTip": "Data\\Config\\GroupQuizConfiguration.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA0wAgAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:24:02.959Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:24:02.959Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "LessonMaterialConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\Config\\LessonMaterialConfiguration.cs",
               "RelativeDocumentMoniker": "Data\\Config\\LessonMaterialConfiguration.cs",
@@ -164,12 +175,11 @@
               "RelativeToolTip": "Data\\Config\\LessonMaterialConfiguration.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA0wBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:18:37.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:18:37.623Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Quiz.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\Quiz.cs",
               "RelativeDocumentMoniker": "Entities\\Quiz.cs",
@@ -177,12 +187,11 @@
               "RelativeToolTip": "Entities\\Quiz.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAA5wBUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:22:25.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:22:25.328Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Group.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\Group.cs",
               "RelativeDocumentMoniker": "Entities\\Group.cs",
@@ -190,12 +199,11 @@
               "RelativeToolTip": "Entities\\Group.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAA5wBwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:21:16.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:21:16.891Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "LessonMaterial.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\LessonMaterial.cs",
               "RelativeDocumentMoniker": "Entities\\LessonMaterial.cs",
@@ -203,12 +211,11 @@
               "RelativeToolTip": "Entities\\LessonMaterial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:17:31.025Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:17:31.025Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "AssignmentSubmission.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\AssignmentSubmission.cs",
               "RelativeDocumentMoniker": "Entities\\AssignmentSubmission.cs",
@@ -216,12 +223,11 @@
               "RelativeToolTip": "Entities\\AssignmentSubmission.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:03:30.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:03:30.816Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Assignment.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\Assignment.cs",
               "RelativeDocumentMoniker": "Entities\\Assignment.cs",
@@ -229,12 +235,11 @@
               "RelativeToolTip": "Entities\\Assignment.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T18:02:17.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T18:02:17.314Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -246,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "API.csproj",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\API.csproj",
               "RelativeDocumentMoniker": "API.csproj",
@@ -258,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "API.http",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\API.http",
               "RelativeDocumentMoniker": "API.http",
@@ -270,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "AllowedStudentController.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Controllers\\Teacher\\AllowedStudentController.cs",
               "RelativeDocumentMoniker": "Controllers\\Teacher\\AllowedStudentController.cs",
