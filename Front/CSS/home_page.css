@@ -56,7 +56,7 @@ body {
     border-radius: 15px;
     transition: background-color 0.3s ease;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.429);
+    background-color: rgba(255, 255, 255, 0.86);
 }
 
 
@@ -71,7 +71,7 @@ body {
 }
 
 .side-menu ul li:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.504);
 }
 
 #header {
@@ -133,8 +133,9 @@ body {
     margin: 0;
     padding: 10px;
     margin-left: 4%;
-    color: #273c98dc;
+    color: #000000dc;
     margin-bottom: 50px;
+    font-weight: bold;
     font-size: 24px
 }
 
@@ -174,7 +175,7 @@ body {
 
 .course-item p {
     font-size: 16px;
-    color: #273c98;
+    color: #010101d4;
     font-weight: bold;
 }
 
@@ -269,68 +270,157 @@ body {
 
 /*                    ********************************************************                 */
 
+/* General Lesson Styling */
 #lessons {
     margin: 0;
     padding: 10px;
     margin-left: 4%;
-    color: #273c98dc;
+    color: #040404f3;
     margin-bottom: 50px;
-    font-size: 24px
-}
-
-#lessonslist {
-    display: flex;
-    padding-left: 20px;
-    gap: 10px;
-}
-
-.lesson-item h3 {
+    font-weight: bold;
     font-size: 25px;
-    font-weight: bold;
-    color: #ffffff;
-    margin: 10px 0;
 }
 
-.lesson-item p {
-    font-size: 16px;
-    color: #273c98;
-    font-weight: bold;
-}
-
+/* Flexbox layout for lessons list */
 #lessonslist {
     display: flex;
-    justify-content: center;
-    gap: 90px;
+    flex-wrap: wrap;
+    /* Ensure items wrap to the next line on smaller screens */
+    gap: 15px;
+    /* Add some space between the items */
+    justify-content: space-around;
 }
 
-.lesson-item {
-    background-color: #273c9877;
-    border-radius: 35px;
-    padding: 35px;
-    margin: 0px;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.236);
-    width: 350px;
-    height: 250px;
+/* Lesson Item Styling */
+.lesson-item h3 {
+    margin: 20px 0;
 }
 
+/* Hover effect on lesson items */
 .lesson-item:hover {
     transform: scale(1.05);
 }
 
-.lesson-item h3 {
-    font-size: 25px;
-    font-weight: bold;
-    color: #ffffff;
-    margin: 10px 0;
+/* Lesson Card Styling */
+.lesson-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #ffffff3c;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 440px;
+    border: 1px solid #e5e5e5;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
-.lesson-item p {
-    font-size: 16px;
-    color: #273c98;
+/* Lesson Icon Styling */
+.lesson-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+}
+
+/* Lesson Info Flexbox Layout */
+.lesson-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Meta Information Styling */
+.lesson-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+/* Meta Icons Styling */
+.lesson-meta i {
+    margin-right: 5px;
+}
+
+/* Title Styling */
+.lesson-title {
+    font-size: 20px;
     font-weight: bold;
+    color: #000000;
+    margin: 0;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+
+    /* Adjust lesson card layout on smaller screens */
+    .lesson-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        width: 100%;
+        /* Use full width on medium screens */
+    }
+
+    /* Adjust lesson meta for smaller screens */
+    .lesson-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    /* Title font-size adjustment */
+    .lesson-title {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    /* Adjust the size of the lesson icon */
+    .lesson-icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Add margin to the lessons */
+    #lessons {
+        font-size: 22px;
+        margin-left: 2%;
+    }
+}
+
+/* Responsive Styles for Very Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .lesson-card {
+        padding: 10px;
+        width: 100%;
+        /* Full width with padding */
+    }
+
+    /* Further reduce font size for titles on mobile */
+    .lesson-title {
+        font-size: 14px;
+    }
+
+    /* Make lesson meta font smaller */
+    .lesson-meta {
+        font-size: 12px;
+    }
+
+    /* Adjust the search bar input styling for small screens */
+    .search-bar input {
+        width: 100%;
+        /* Make search bar full-width */
+        margin-bottom: 15px;
+    }
+
+    /* Reduce padding and margin on the lessons section */
+    #lessons {
+        font-size: 20px;
+        margin-left: 0;
+    }
 }
