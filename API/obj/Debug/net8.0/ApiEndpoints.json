@@ -1,1 +1,118 @@
-[]
+[
+  {
+    "ContainingType": "API.Controllers.Teacher.AllowedStudentController",
+    "Method": "Get",
+    "RelativePath": "api/AllowedStudent",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.Teacher.AllowedStudentController",
+    "Method": "Post",
+    "RelativePath": "api/AllowedStudent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "allowedStudent",
+        "Type": "API.DTO.Teacher.AllowedStudent_dto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.Teacher.AllowedStudentController",
+    "Method": "Delete",
+    "RelativePath": "api/AllowedStudent",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "allowedStudent",
+        "Type": "API.DTO.Teacher.AllowedStudent_dto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.Teacher.AllowedStudentController",
+    "Method": "Put",
+    "RelativePath": "api/AllowedStudent",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "allowedStudent",
+        "Type": "API.DTO.Teacher.AllowedStudent_dto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.Teacher.GroupController",
+    "Method": "Get",
+    "RelativePath": "api/Group",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.Teacher.GroupController",
+    "Method": "Post",
+    "RelativePath": "api/Group",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group",
+        "Type": "API.DTO.Teacher.Group_dto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.Teacher.GroupController",
+    "Method": "Put",
+    "RelativePath": "api/Group",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group",
+        "Type": "API.DTO.Teacher.Group_dto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.Teacher.GroupController",
+    "Method": "Delete",
+    "RelativePath": "api/Group/{Group_id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Group_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

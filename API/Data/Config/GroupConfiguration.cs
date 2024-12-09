@@ -42,8 +42,8 @@ public class GroupConfiguration : IEntityTypeConfiguration<Group>
 
         builder.HasMany(g => g.Quizzes)
                .WithOne(q => q.Group)
-               .HasForeignKey(q => q.GroupId)
-               .OnDelete(DeleteBehavior.SetNull);
+               .HasForeignKey(q => q.QuizID)
+               .OnDelete(DeleteBehavior.Cascade);
 
         builder.HasMany(g => g.Notifications)
                .WithOne(n => n.Group)

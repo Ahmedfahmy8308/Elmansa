@@ -21,10 +21,10 @@ namespace API.Data.Config
             builder.Property(x => x.IsPublished).IsRequired().HasDefaultValue(false);
 
             // Relationships
-            builder.HasOne(x => x.Group)
-                   .WithMany(x => x.Quizzes)
-                   .HasForeignKey(x => x.GroupId)
-                   .OnDelete(DeleteBehavior.SetNull);
+            builder.HasMany(x => x.Groups)
+                   .WithOne(x => x.Quiz)
+                   .HasForeignKey(x => x.GroupID)
+                   .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
