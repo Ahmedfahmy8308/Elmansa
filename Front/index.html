@@ -144,6 +144,49 @@
     <script>function navigateToAccess(mode) {
             window.location.href = `access.html?mode=${mode}`;
         }
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Helper function to add event listeners
+            function on(event, selector, handler, all = false) {
+                const elements = all ? document.querySelectorAll(selector) : [document.querySelector(selector)];
+                elements.forEach(el => el && el.addEventListener(event, handler));
+            }
+
+            // Mobile nav toggle
+            on('click', '.mobile-nav-toggle', function () {
+                const navbar = document.querySelector('#navbar');
+                navbar.classList.toggle('navbar-mobile');
+                this.classList.toggle('bi-list');
+                this.classList.toggle('bi-x');
+            });
+
+            // Dropdown activation in mobile navbar
+            on('click', '.navbar .dropdown > a', function (e) {
+                const navbar = document.querySelector('#navbar');
+                if (navbar && navbar.classList.contains('navbar-mobile')) {
+                    e.preventDefault();
+                    const dropdown = this.nextElementSibling;
+                    if (dropdown) dropdown.classList.toggle('dropdown-active');
+                }
+            }, true);
+
+            // Smooth scroll for .scrollto links
+            on('click', '.scrollto', function (e) {
+                const target = document.querySelector(this.hash);
+                if (target) {
+                    e.preventDefault();
+                    const navbar = document.querySelector('#navbar');
+                    if (navbar && navbar.classList.contains('navbar-mobile')) {
+                        navbar.classList.remove('navbar-mobile');
+                        const navbarToggle = document.querySelector('.mobile-nav-toggle');
+                        navbarToggle.classList.toggle('bi-list');
+                        navbarToggle.classList.toggle('bi-x');
+                    }
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, true);
+        });
     </script>
 </body>
 <!-- END OF BODY -->
