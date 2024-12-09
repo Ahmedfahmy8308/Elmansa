@@ -10,8 +10,7 @@ namespace API.Data.Config
         {
             // Primary Key 
             builder.HasKey(x => x.ID);
-            builder.Property(x => x.ID)
-                   .ValueGeneratedOnAdd(); 
+            
 
             // Properties
             builder.Property(x => x.Fname).IsRequired().HasMaxLength(50);

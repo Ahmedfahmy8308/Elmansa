@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using API.Data;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers.Student
@@ -7,5 +8,12 @@ namespace API.Controllers.Student
     [ApiController]
     public class StudentAccount : ControllerBase
     {
+        readonly AppDbContext _mydb;
+        public StudentAccount(AppDbContext mydb)
+        {
+            _mydb = mydb;
+        }
+
+
     }
 }
