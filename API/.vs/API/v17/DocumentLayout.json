@@ -3,40 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\controllers\\teacher\\allowedstudentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:controllers\\teacher\\allowedstudentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\entities\\allowedstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:entities\\allowedstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\dto\\teacher\\allowedstudent_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:dto\\teacher\\allowedstudent_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\controllers\\teacher\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:controllers\\teacher\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\dto\\teacher\\group_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:dto\\teacher\\group_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\entities\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:entities\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\migrations\\20241208192755_iniatemydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:migrations\\20241208192755_iniatemydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,120 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AllowedStudent.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\AllowedStudent.cs",
-              "RelativeDocumentMoniker": "Entities\\AllowedStudent.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\AllowedStudent.cs",
-              "RelativeToolTip": "Entities\\AllowedStudent.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T12:36:04.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AllowedStudent_dto.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\DTO\\Teacher\\AllowedStudent_dto.cs",
-              "RelativeDocumentMoniker": "DTO\\Teacher\\AllowedStudent_dto.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\DTO\\Teacher\\AllowedStudent_dto.cs",
-              "RelativeToolTip": "DTO\\Teacher\\AllowedStudent_dto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T12:33:22.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AllowedStudentController.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Controllers\\Teacher\\AllowedStudentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Teacher\\AllowedStudentController.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Controllers\\Teacher\\AllowedStudentController.cs",
-              "RelativeToolTip": "Controllers\\Teacher\\AllowedStudentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T12:28:52.995Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "GroupController.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Controllers\\Teacher\\GroupController.cs",
               "RelativeDocumentMoniker": "Controllers\\Teacher\\GroupController.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Controllers\\Teacher\\GroupController.cs",
-              "RelativeToolTip": "Controllers\\Teacher\\GroupController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA0wBQAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Controllers\\Teacher\\GroupController.cs*",
+              "RelativeToolTip": "Controllers\\Teacher\\GroupController.cs*",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAkwDwAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T19:35:26.746Z",
+              "WhenOpened": "2024-12-09T13:29:13.275Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAA0wCcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T20:08:21.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Group.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\Group.cs",
-              "RelativeDocumentMoniker": "Entities\\Group.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Entities\\Group.cs",
-              "RelativeToolTip": "Entities\\Group.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA5wBoAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T19:47:09.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Group_dto.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\DTO\\Teacher\\Group_dto.cs",
-              "RelativeDocumentMoniker": "DTO\\Teacher\\Group_dto.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\DTO\\Teacher\\Group_dto.cs",
-              "RelativeToolTip": "DTO\\Teacher\\Group_dto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T19:46:56.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "20241208192755_IniateMyDb.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Migrations\\20241208192755_IniateMyDb.cs",
-              "RelativeDocumentMoniker": "Migrations\\20241208192755_IniateMyDb.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Migrations\\20241208192755_IniateMyDb.cs",
-              "RelativeToolTip": "Migrations\\20241208192755_IniateMyDb.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T19:27:55.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T19:25:15.604Z"
             }
           ]
         }

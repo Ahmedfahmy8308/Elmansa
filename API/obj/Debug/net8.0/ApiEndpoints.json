@@ -85,9 +85,9 @@
   },
   {
     "ContainingType": "API.Controllers.Teacher.GroupController",
-    "Method": "Put",
+    "Method": "Delete",
     "RelativePath": "api/Group",
-    "HttpMethod": "PUT",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -101,15 +101,15 @@
   },
   {
     "ContainingType": "API.Controllers.Teacher.GroupController",
-    "Method": "Delete",
-    "RelativePath": "api/Group/{Group_id}",
-    "HttpMethod": "DELETE",
+    "Method": "Put",
+    "RelativePath": "api/Group",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Group_id",
-        "Type": "System.Int32",
+        "Name": "group",
+        "Type": "API.DTO.Teacher.Group_dto",
         "IsRequired": true
       }
     ],
