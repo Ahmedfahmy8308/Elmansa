@@ -1,5 +1,12 @@
 Microsoft.EntityFrameworkCore.SqlServer
 Microsoft.EntityFrameworkCore.Tools
 Microsoft.EntityFrameworkCore.Design 
+Microsoft.AspNetCore.JsonPatch
+Microsoft.AspNetCore.Mvc.NewtonsoftJson
+Microsoft.AspNetCore.Identity.EntityFrameworkCore
+Microsoft.AspNetCore.Authentication.JwtBearer
 
-Scaffold-DbContext "Data Source=FAHMY;Initial Catalog=Elmansa_api;Integrated Security=True;Encrypt=True;Trust Server Certificate=True"   Microsoft.EntityFrameworkCore.SqlServer -DataAnnotations -outputDir Models -contextDir Data -force
+
+add-migration
+update-database
+

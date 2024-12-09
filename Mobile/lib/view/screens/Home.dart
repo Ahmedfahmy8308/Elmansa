@@ -1,3 +1,8 @@
+// import 'package:elmanasa/helper/notification.dart';
+import 'package:elmanasa/helper/dashboard.dart';
+// import 'package:elmanasa/view/screens/lesson.dart';
+// import 'package:elmanasa/view/screens/quiz.dart';
+
 import 'package:flutter/material.dart';
 import 'package:elmanasa/view/screens/utils.dart';
 
@@ -8,7 +13,9 @@ class HomeScreen extends StatefulWidget {
   _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
+  late AnimationController _animationController;
+  late Animation<Offset> _slideAnimation;
   String? firstName;
   String? photoUrl;
   bool isLoading = true;
@@ -24,10 +31,23 @@ class _HomeScreenState extends State<HomeScreen> {
 
   List<String> filteredCourses = [];
   TextEditingController searchController = TextEditingController();
+
   @override
   void initState() {
     super.initState();
-    fetchMockData(); // Use mock data instead of calling an API
+    fetchMockData();
+    _animationController = AnimationController(
+      vsync: this,
+      duration: Duration(milliseconds: 300),
+    );
+
+    _slideAnimation = Tween<Offset>(
+      begin: Offset(-1.0, 0.0), // Initially off-screen
+      end: Offset(0.0, 0.0), // Slide in to take half the screen width
+    ).animate(CurvedAnimation(
+      parent: _animationController,
+      curve: Curves.easeInOut,
+    )); // Use mock data instead of calling an API
   }
 
   Future<void> fetchMockData() async {
@@ -50,268 +70,275 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  void _toggleDashboard() {
+    if (_animationController.isDismissed) {
+      _animationController.forward(); // Open the side menu
+    } else {
+      _animationController.reverse(); // Close the side menu
+    }
+  }
+
   @override
   void dispose() {
-    searchController
-        .dispose(); // Dispose the controller when the widget is disposed
+    _animationController.dispose();
+    searchController.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        resizeToAvoidBottomInset: true,
-        body: isLoading
-            ? Center(child: CircularProgressIndicator())
-            : SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      color: Color.fromARGB(255, 170, 152, 245),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                CircleAvatar(
-                                  radius: 30,
-                                  backgroundImage:
-                                      photoUrl != null && photoUrl!.isNotEmpty
-                                          ? AssetImage(photoUrl!)
-                                          : AssetImage('assets/images/me.jpg')
-                                              as ImageProvider,
+      backgroundColor: Colors.white,
+      resizeToAvoidBottomInset: true,
+      body: isLoading
+          ? Center(child: CircularProgressIndicator())
+          : Stack(
+              children: [
+                GestureDetector(
+                  // Detecting taps outside the dashboard to close the menu
+                  onTap: () {
+                    if (_animationController.isCompleted) {
+                      _toggleDashboard(); // Only toggle the menu if it's open
+                    }
+                  },
+                  child: SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 8),
+                                      child: IconButton(
+                                        icon: Icon(Icons.menu),
+                                        onPressed: _toggleDashboard,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                          top: 8.0, left: 230),
+                                      child: HomeScreen(),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 7),
+                                      child: CircleAvatar(
+                                        radius: 25,
+                                        backgroundImage: photoUrl != null &&
+                                                photoUrl!.isNotEmpty
+                                            ? AssetImage(photoUrl!)
+                                            : AssetImage('assets/images/me.jpg')
+                                                as ImageProvider,
+                                      ),
+                                    ),
+                                  ],
                                 ),
-                                SizedBox(width: 10),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 15.0),
-                                  child: Text(
-                                    firstName != null
-                                        ? 'Hello, $firstName!'
-                                        : 'Hello!',
-                                    style: TextStyle(
-                                      fontSize: 22,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(
+                                        top: 15.0, left: 15),
+                                    child: Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: Text(
+                                        firstName != null
+                                            ? 'Hello, $firstName!'
+                                            : 'Hello!',
+                                        style: TextStyle(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.w900,
+                                          color: Colors.black,
+                                        ),
+                                      ),
                                     ),
                                   ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 15.0),
+                                    child: Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: Text(
+                                        'Have a nice day!',
+                                        style: GoogleFonts.readexPro(
+                                          fontSize: 14,
+                                          color: const Color.fromARGB(
+                                              255, 114, 114, 114),
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: TextField(
+                                  decoration: InputDecoration(
+                                      hintText: 'Search here...',
+                                      hintStyle: TextStyle(
+                                          color: const Color.fromARGB(
+                                              255, 114, 114, 114),
+                                          fontSize: 16),
+                                      suffixIcon: Icon(
+                                        Icons.search,
+                                        color: const Color.fromARGB(
+                                            255, 114, 114, 114),
+                                      ),
+                                      filled: true,
+                                      fillColor: Color(0xffeaf3fd),
+                                      border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(26),
+                                        borderSide: BorderSide.none,
+                                      ),
+                                      contentPadding: EdgeInsets.all(15)),
                                 ),
-                              ],
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: TextField(
-                                decoration: InputDecoration(
-                                    hintText: 'Search here...',
-                                    prefixIcon: Icon(Icons.search),
-                                    filled: true,
-                                    fillColor: Colors.white,
-                                    border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(30),
-                                      borderSide: BorderSide.none,
-                                    )),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              'Available Courses',
+                              style: GoogleFonts.readexPro(
+                                fontSize: 20,
+                                color: Color(0xff14181B),
+                                fontWeight: FontWeight.w700,
                               ),
                             ),
-                          ],
+                          ),
                         ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Text(
-                        'Available Courses',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                    Center(
-                      child: Container(
-                        height: 240,
-                        width: 380,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                              height: 120,
+                        Center(
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => HomeScreen()),
+                              );
+                            },
+                            child: Container(
                               decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(12),
-                                      topRight: Radius.circular(12)),
-                                  image: DecorationImage(
-                                      image: AssetImage('assets/images/c4.jpg'),
-                                      fit: BoxFit.cover)),
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.only(
-                                    bottomLeft: Radius.circular(12),
-                                    bottomRight: Radius.circular(12)),
-                                color: Colors.white,
+                             color: Color(0xffeaf3fd),
+                                borderRadius: BorderRadius.circular(60),
                               ),
-                              height: 120,
-                              width: 400,
+                              height: 240,
+                              width: 360,
                               child: Padding(
                                 padding: const EdgeInsets.all(16.0),
                                 child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
-                                      "Mathematics",
-                                      style: GoogleFonts.readexPro(
-                                        fontSize: 18,
-                                        color:
-                                            Color.fromARGB(255, 113, 95, 187),
-                                        fontWeight: FontWeight.w400,
+                                    Padding(
+                                      padding:
+                                          const EdgeInsets.only(left: 12.0),
+                                      child: Text(
+                                        "Mathematics",
+                                        style: GoogleFonts.readexPro(
+                                          fontSize: 20,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
-                                    SizedBox(
-                                      height: 15,
-                                    ),
-                                    Text(
-                                      "Mathematics & Statistics",
-                                      style: GoogleFonts.readexPro(
-                                        fontSize: 24,
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w400,
+                                    SizedBox(height: 15),
+                                    Padding(
+                                      padding:
+                                          const EdgeInsets.only(left: 12.0),
+                                      child: Text(
+                                        "Quizzes",
+                                        style: GoogleFonts.readexPro(
+                                          fontSize: 24,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ],
                                 ),
                               ),
                             ),
-                          ],
+                          ),
                         ),
-                      ),
-                    ),
-                    Center(
-                      child: Container(
-                        height: 240,
-                        width: 380,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                              height: 120,
+                        SizedBox(height: 15),
+                        Center(
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => HomeScreen()),
+                              );
+                            },
+                            child: Container(
                               decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(12),
-                                      topRight: Radius.circular(12)),
-                                  image: DecorationImage(
-                                      image: AssetImage('assets/images/c6.jpg'),
-                                      fit: BoxFit.cover)),
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.only(
-                                    bottomLeft: Radius.circular(12),
-                                    bottomRight: Radius.circular(12)),
-                                color: Colors.white,
+                                color: Color(0xffeaf3fd),
+                                borderRadius: BorderRadius.circular(60),
                               ),
-                              height: 120,
-                              width: 400,
+                              height: 240,
+                              width: 360,
                               child: Padding(
                                 padding: const EdgeInsets.all(16.0),
                                 child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
-                                      "Mathematics",
-                                      style: GoogleFonts.readexPro(
-                                        fontSize: 18,
-                                        color:
-                                            Color.fromARGB(255, 113, 95, 187),
-                                        fontWeight: FontWeight.w400,
+                                    Padding(
+                                      padding:
+                                          const EdgeInsets.only(left: 12.0),
+                                      child: Text(
+                                        "Mathematics",
+                                        style: GoogleFonts.readexPro(
+                                          fontSize: 18,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
-                                    SizedBox(
-                                      height: 15,
-                                    ),
-                                    Text(
-                                      "Algebra",
-                                      style: GoogleFonts.readexPro(
-                                        fontSize: 24,
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w400,
+                                    SizedBox(height: 15),
+                                    Padding(
+                                      padding:
+                                          const EdgeInsets.only(left: 12.0),
+                                      child: Text(
+                                        "Lessons",
+                                        style: GoogleFonts.readexPro(
+                                          fontSize: 24,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                        ),
                                       ),
                                     ),
                                   ],
                                 ),
                               ),
                             ),
-                          ],
+                          ),
                         ),
-                      ),
+                      ],
                     ),
-                    Center(
-                      child: Container(
-                        height: 240,
-                        width: 380,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                              height: 120,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(12),
-                                      topRight: Radius.circular(12)),
-                                  image: DecorationImage(
-                                      image: AssetImage('assets/images/c5.jpg'),
-                                      fit: BoxFit.cover)),
-                            ),
-                            Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.only(
-                                    bottomLeft: Radius.circular(12),
-                                    bottomRight: Radius.circular(12)),
-                                color: Colors.white,
-                              ),
-                              height: 120,
-                              width: 400,
-                              child: Padding(
-                                padding: const EdgeInsets.all(16.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "Mathematics",
-                                      style: GoogleFonts.readexPro(
-                                        fontSize: 18,
-                                        color:
-                                            Color.fromARGB(255, 113, 95, 187),
-                                        fontWeight: FontWeight.w400,
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      height: 15,
-                                    ),
-                                    Text(
-                                      "Geometry",
-                                      style: GoogleFonts.readexPro(
-                                        fontSize: 24,
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w400,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    )
-                  ],
+                  ),
                 ),
-              ));
+                SlideTransition(
+                  position: _slideAnimation,
+                  child: Dashboard(
+                    onClose:
+                        _toggleDashboard, // Close menu when tapping outside
+                  ),
+                ),
+              ],
+            ),
+    );
   }
 }

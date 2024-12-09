@@ -24,7 +24,8 @@ public class GroupConfiguration : IEntityTypeConfiguration<Group>
                .IsRequired();
 
         builder.Property(g => g.CreatedAt)
-               .IsRequired();
+               .IsRequired()
+               .HasColumnType("datetime2(0)");
 
         builder.Property(g => g.IsActive)
                .IsRequired().HasDefaultValue(true);
@@ -42,8 +43,8 @@ public class GroupConfiguration : IEntityTypeConfiguration<Group>
 
         builder.HasMany(g => g.Quizzes)
                .WithOne(q => q.Group)
-               .HasForeignKey(q => q.GroupId)
-               .OnDelete(DeleteBehavior.SetNull);
+               .HasForeignKey(q => q.QuizID)
+               .OnDelete(DeleteBehavior.Cascade);
 
         builder.HasMany(g => g.Notifications)
                .WithOne(n => n.Group)

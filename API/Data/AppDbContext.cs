@@ -1,9 +1,12 @@
 ﻿using API.Entities;
 using Microsoft.EntityFrameworkCore;
+using System.Data.Common;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace API.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -20,6 +23,7 @@ namespace API.Data
         public DbSet<Material> Materials { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<Quiz> Quizs { get; set; }
+        public DbSet<GroupQuiz> GroupQuizs { get; set; }
         public DbSet<QuizQuestion> QuizQuestions { get; set; }
         public DbSet<QuizOption> QuizOptions { get; set; }
         public DbSet<QuizSubmission> QuizSubmissions { get; set; }
@@ -34,6 +38,7 @@ namespace API.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
         }
     }
