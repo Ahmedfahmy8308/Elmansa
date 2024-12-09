@@ -2,8 +2,9 @@
 
 namespace API.DTO.Teacher
 {
-    public class Group_Add_dto
+    public class Group_dto
     {
+        public int Group_id { get; set; }
         public string Group_name { get; set; } = null!;
 
         public string Groub_stage { get; set; } = null!;

@@ -17,15 +17,18 @@ namespace API.Controllers.Teacher
             _mydb = mydb;
         }
 
+
+
         [HttpGet]
         public async Task<IActionResult> Get()
         {
             var Opj = await _mydb.Groups.ToListAsync();
-            var Groups = new List<Group_Add_dto>();
+            var Groups = new List<Group_dto>();
 
             foreach (var item in Opj)
             {
-                Group_Add_dto group = new Group_Add_dto();
+                Group_dto group = new Group_dto();
+                group.Group_id = item.ID;
                 group.Group_name = item.Name;
                 group.Groub_stage = item.Stage;
                 group.Group_stage_level = item.StageLevel;
@@ -37,7 +40,7 @@ namespace API.Controllers.Teacher
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(Group_Add_dto group)
+        public async Task<IActionResult> Post(Group_dto group)
         {
             Group Opj = new Group();
             Opj.Name = group.Group_name;
@@ -53,17 +56,35 @@ namespace API.Controllers.Teacher
 
 
         [HttpDelete("{Group_id}")]
-        
         public async Task<IActionResult> Delete(int Group_id)
         {
-            var Group = await _mydb.Groups.FirstOrDefaultAsync(x => x.ID == Group_id);
-            if (Group == null)
+            var Opj = await _mydb.Groups.FirstOrDefaultAsync(x => x.ID == Group_id);
+            if (Opj == null)
             {
-                return NotFound("No Such group");
+                return NotFound("No Such group ");
             }
-            _mydb.Groups.Remove(Group);
+            _mydb.Groups.Remove(Opj);
             await _mydb.SaveChangesAsync();
             return Ok();
         }
+
+        [HttpPut]
+        public async Task<IActionResult> Put(Group_dto group)
+        {
+            var Opj = await _mydb.Groups.FirstOrDefaultAsync(x => x.ID == group.Group_id);
+            if (Opj == null)
+            {
+                return NotFound("No Such group ");
+            }
+            Opj.Name = group.Group_name;
+            Opj.Stage = group.Groub_stage;
+            Opj.StageLevel = group.Group_stage_level;
+            Opj.CreatedAt = group.Group_created_data;
+            Opj.IsActive = group.Group_active;
+
+            await _mydb.SaveChangesAsync();
+            return Ok(group);
+        }
+
     }
 }

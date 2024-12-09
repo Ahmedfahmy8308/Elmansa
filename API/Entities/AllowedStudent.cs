@@ -15,7 +15,7 @@ public class AllowedStudent
     public int? GroupID { get; set; } 
     public bool AccountActive { get; set; }
     public Group? Group { get; set; }
-
+     
     [JsonIgnore]
     public Student? Student { get; set; }
 }
