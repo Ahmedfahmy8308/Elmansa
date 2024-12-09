@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TYVfw5XbIT47iwRQOjlVHKz2Ir/oiJBOUrqSuoRjwjY=",
+  "Hash": "9Ipud2PS2ReclXxPOixJLvydPsWB/wcn9wyI73/w9SA=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -15,25 +15,5 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [
-    {
-      "Identity": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\wwwroot\\StudentPhotos\\2412093471.HEIC",
-      "SourceId": "API",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\wwwroot\\",
-      "BasePath": "_content/API",
-      "RelativePath": "StudentPhotos/2412093471.HEIC",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\StudentPhotos\\2412093471.HEIC"
-    }
-  ]
+  "Assets": []
 }
