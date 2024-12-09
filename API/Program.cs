@@ -1,5 +1,6 @@
 
 using API.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace API
@@ -11,6 +12,15 @@ namespace API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddIdentity<AppUser, IdentityRole>(op =>
+                {
+                    op.Password.RequireDigit = false;
+                    op.Password.RequireLowercase = false;
+                    op.Password.RequireUppercase = false;
+                    op.Password.RequireNonAlphanumeric = false;
+                    op.Password.RequiredLength = 6;
+                }
+                ).AddEntityFrameworkStores<AppDbContext>();
 
             builder.Services.AddControllers();
             builder.Services.AddDbContext<AppDbContext>(options =>
