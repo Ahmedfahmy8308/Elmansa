@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|c:\\users\\ahmed\\desktop\\elmansa\\elmansa\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31C2ADD0-1425-4505-9E54-536C75C0AD1E}|API.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA0wCQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:13:57.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAA0wC8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-09T22:01:12.676Z",
               "EditorCaption": ""

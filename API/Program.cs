@@ -31,8 +31,8 @@ namespace API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            //var context = builder.Services.BuildServiceProvider().GetService<AppDbContext>();
-            //context.Database.EnsureCreated();
+            var context = builder.Services.BuildServiceProvider().GetService<AppDbContext>();
+            context.Database.EnsureCreated();
             //context.Database.Migrate();
             //context.Database.EnsureDeleted();
 

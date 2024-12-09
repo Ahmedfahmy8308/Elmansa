@@ -5,6 +5,8 @@ Microsoft.AspNetCore.JsonPatch
 Microsoft.AspNetCore.Mvc.NewtonsoftJson
 Microsoft.AspNetCore.Identity.EntityFrameworkCore
 Microsoft.AspNetCore.Authentication.JwtBearer
+SixLabors.ImageSharp
+
 
 
 add-migration
