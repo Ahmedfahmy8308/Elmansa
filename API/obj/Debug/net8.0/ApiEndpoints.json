@@ -1,5 +1,66 @@
 [
   {
+    "ContainingType": "API.Controllers.AccountController",
+    "Method": "Register",
+    "RelativePath": "api/Account/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Student_email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Student_password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Student_first_name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Student_Middel_name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Student_last_name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Student_number",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Student_SSN",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Student_date_birth",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Student_photo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Student_guardian_number",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.Teacher.AllowedStudentController",
     "Method": "Get",
     "RelativePath": "api/AllowedStudent",

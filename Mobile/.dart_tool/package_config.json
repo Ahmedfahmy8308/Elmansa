@@ -434,6 +434,36 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "video_player",
+      "rootUri": "file:///C:/Users/MalakAlsayed/AppData/Local/Pub/Cache/hosted/pub.dev/video_player-2.9.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "video_player_android",
+      "rootUri": "file:///C:/Users/MalakAlsayed/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.7.16",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "video_player_avfoundation",
+      "rootUri": "file:///C:/Users/MalakAlsayed/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_avfoundation-2.6.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "video_player_platform_interface",
+      "rootUri": "file:///C:/Users/MalakAlsayed/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_platform_interface-6.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "video_player_web",
+      "rootUri": "file:///C:/Users/MalakAlsayed/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_web-2.3.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
       "name": "vm_service",
       "rootUri": "file:///C:/Users/MalakAlsayed/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.2.5",
       "packageUri": "lib/",
@@ -470,7 +500,7 @@
       "languageVersion": "3.4"
     }
   ],
-  "generated": "2024-12-07T23:16:16.437978Z",
+  "generated": "2024-12-09T22:16:52.459163Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///C:/flutter_setup/src/flutter",

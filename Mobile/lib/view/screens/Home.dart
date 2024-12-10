@@ -1,10 +1,11 @@
 // import 'package:elmanasa/helper/notification.dart';
 import 'package:elmanasa/helper/dashboard.dart';
+import 'package:elmanasa/view/screens/lesson_home.dart';
 // import 'package:elmanasa/view/screens/lesson.dart';
 // import 'package:elmanasa/view/screens/quiz.dart';
 
 import 'package:flutter/material.dart';
-import 'package:elmanasa/view/screens/utils.dart';
+import 'package:elmanasa/helper/utils.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 
@@ -124,11 +125,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.only(
-                                          top: 8.0, left: 230),
-                                      child: HomeScreen(),
-                                    ),
-                                    Padding(
                                       padding: const EdgeInsets.only(top: 7),
                                       child: CircleAvatar(
                                         radius: 25,
@@ -230,7 +226,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                             },
                             child: Container(
                               decoration: BoxDecoration(
-                             color: Color(0xffeaf3fd),
+                                color: Color(0xffeaf3fd),
                                 borderRadius: BorderRadius.circular(60),
                               ),
                               height: 240,
@@ -279,7 +275,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => HomeScreen()),
+                                    builder: (context) => LessonHomeScreen()),
                               );
                             },
                             child: Container(

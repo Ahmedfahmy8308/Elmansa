@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/gestures.dart';
 import 'register.dart';
-import 'package:elmanasa/view/screens/utils.dart';
+import 'package:elmanasa/helper/utils.dart';
 
 class LoginScreen extends StatefulWidget {
   @override

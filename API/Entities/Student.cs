@@ -8,7 +8,7 @@ namespace API.Entities;
 
 public class Student
 {
-    public int ID { get; set; }
+    public string ID { get; set; }
     public string Fname { get; set; } = null!;
     public string Mname { get; set; } = null!;
     public string Lname { get; set; } = null!;

@@ -9,7 +9,7 @@ namespace API.Entities;
 public class QuizSubmission
 {
     public int ID { get; set; }
-    public int StudentID { get; set; }
+    public string StudentID { get; set; } = null!;
     public int QuizID { get; set; }
     public double? Score { get; set; }
     public DateTime SubmissionDate { get; set; }

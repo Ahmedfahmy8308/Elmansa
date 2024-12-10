@@ -9,7 +9,7 @@ public class UserNotification
 {
     public int ID { get; set; }
     public int NotificationId { get; set; }
-    public int StudentID { get; set; }
+    public string StudentID { get; set; } = null!;
     public bool IsRead { get; set; }
     public DateTime? ReadAt { get; set; }
 

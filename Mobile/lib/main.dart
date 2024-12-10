@@ -1,5 +1,9 @@
+import 'package:elmanasa/helper/switch.dart';
 import 'package:elmanasa/view/screens/Home.dart';
+import 'package:elmanasa/view/screens/lesson.dart';
+import 'package:elmanasa/view/screens/lesson_home.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:elmanasa/view/screens/welcomeScreen.dart';
 import 'package:elmanasa/view/screens/login.dart';
@@ -8,12 +12,8 @@ import 'package:elmanasa/view/screens/Home.dart';
 
 import 'package:elmanasa/view/screens/public_page.dart';
 
-
-
-
-
-
-main() {
+void main() {
+  //debugPaintSizeEnabled = true;
   runApp(MyApp());
 }
 
@@ -23,8 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "ELMANASA",
-      home:HomeScreen(),
+      home: SwitchPage(),
     );
   }
 }
-
