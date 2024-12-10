@@ -24,7 +24,8 @@ public class GroupConfiguration : IEntityTypeConfiguration<Group>
                .IsRequired();
 
         builder.Property(g => g.CreatedAt)
-               .IsRequired();
+               .IsRequired()
+               .HasColumnType("datetime2(0)");
 
         builder.Property(g => g.IsActive)
                .IsRequired().HasDefaultValue(true);

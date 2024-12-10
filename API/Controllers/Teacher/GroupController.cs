@@ -55,10 +55,10 @@ namespace API.Controllers.Teacher
         }
 
 
-        [HttpDelete("{Group_id}")]
-        public async Task<IActionResult> Delete(int Group_id)
+        [HttpDelete]
+        public async Task<IActionResult> Delete(Group_dto group )
         {
-            var Opj = await _mydb.Groups.FirstOrDefaultAsync(x => x.ID == Group_id);
+            var Opj = await _mydb.Groups.FirstOrDefaultAsync(x => x.ID == group.Group_id);
             if (Opj == null)
             {
                 return NotFound("No Such group ");
