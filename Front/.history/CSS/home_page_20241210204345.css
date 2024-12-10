@@ -450,3 +450,8 @@ body {
     border-color: rgba(13, 13, 13, 0.595);
 
 }
+
+#tabSection {
+    width: 80%;
+    display: flex;
+}

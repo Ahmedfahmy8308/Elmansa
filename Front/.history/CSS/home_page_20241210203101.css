@@ -311,7 +311,7 @@ body {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 440px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #e5e5e531;
     transition: all 0.3s ease;
     margin-bottom: 20px;
     flex-direction: row;
@@ -423,30 +423,4 @@ body {
         font-size: 20px;
         margin-left: 0;
     }
-}
-
-/*                              specific lesson                                     */
-.video-section {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.playlist-item {
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #f8f9fa;
-    transition: background-color 0.3s;
-}
-
-.playlist-item:hover {
-    background-color: #e9ecef;
-}
-
-.playlist-item.active {
-    background-color: #3f3f3f27;
-    color: black;
-    border-color: rgba(13, 13, 13, 0.595);
-
 }

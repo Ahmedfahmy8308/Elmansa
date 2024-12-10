@@ -424,29 +424,3 @@ body {
         margin-left: 0;
     }
 }
-
-/*                              specific lesson                                     */
-.video-section {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.playlist-item {
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #f8f9fa;
-    transition: background-color 0.3s;
-}
-
-.playlist-item:hover {
-    background-color: #e9ecef;
-}
-
-.playlist-item.active {
-    background-color: #3f3f3f27;
-    color: black;
-    border-color: rgba(13, 13, 13, 0.595);
-
-}

@@ -127,7 +127,7 @@
                         </button>
 
                         <!-- Page Title -->
-                        <h3 class="mb-0" style="color:#273c98fb">Lesson Details</h3>
+                        <h5 class="mb-0">Lesson Details</h5>
                         <!-- Favorite Icon -->
                         <button class="btn btn-light" style="background-color: #e5e5e531; border-radius: 50%;">
                             <i class="bi bi-heart heart"></i>
@@ -138,7 +138,7 @@
                 <div class="container mt-4">
                     <div class="video-section">
                         <!-- Video Player -->
-                        <video id="videoPlayer" controls style="width: 75%; height: auto; border-radius: 25px;">
+                        <video id="videoPlayer" controls style="width: 60%; height: auto; border-radius: 25px;">
                             <source src="assets/img/team/Malak.jpg" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -148,11 +148,11 @@
                     <ul class="nav nav-tabs mb-3" id="tabSection" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="playlist-tab" data-bs-toggle="tab"
-                                data-bs-target="#playlist" type="button" role="tab">Videos</button>
+                                data-bs-target="#playlist" type="button" role="tab">Video</button>
                         </li>
                         <li class="nav-item" role="presentation">
                             <button class="nav-link" id="description-tab" data-bs-toggle="tab"
-                                data-bs-target="#description" type="button" role="tab">Material</button>
+                                data-bs-target="#description" type="button" role="tab">Descriptions</button>
                         </li>
                     </ul>
 
@@ -182,6 +182,10 @@
                     </div>
                 </div>
 
+
+
+
+
             </div>
         </div>
     </div>
@@ -197,54 +201,23 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script>
-        let currentVideo = null;
-        let previousVideo = null;
+        const searchInput = document.getElementById('searchInput');
+        const coursesList = document.getElementById('lessonslist');
+        const courseItems = coursesList.getElementsByClassName('lesson-item');
 
-        // Function to play a selected video
-        function playVideo(videoUrl) {
-            const videoPlayer = document.getElementById('videoPlayer');
-            const videoicon = document.getElementById('icona');
+        searchInput.addEventListener('input', function () {
+            const searchText = searchInput.value.toLowerCase();
 
-            // Save the current video as previous before switching
-            if (currentVideo) {
-                previousVideo = currentVideo;
-            }
+            // Loop through all courses and show/hide based on search
+            Array.from(courseItems).forEach(function (courseItem) {
+                const courseName = courseItem.getAttribute('data-lesson-name').toLowerCase();
 
-            // Set the current video to the selected one
-            currentVideo = videoUrl;
-
-            // Update the video source and play
-            videoPlayer.src = videoUrl;
-            videoPlayer.play();
-
-            // Highlight the active playlist item
-            document.querySelectorAll('.playlist-item').forEach(item => {
-                item.classList.remove('active');
+                if (courseName.includes(searchText)) {
+                    courseItem.style.display = '';
+                } else {
+                    courseItem.style.display = 'none';
+                }
             });
-            document.querySelector(`.playlist-item[data-video-url="${videoUrl}"]`).classList.add('active');
-        }
-
-        // Handle Back button to play the previous video
-        document.getElementById('backButton').addEventListener('click', function () {
-            if (previousVideo) {
-                playVideo(previousVideo);
-            } else {
-                alert('No previous video available!');
-            }
-        });
-
-        // Set up event listeners for playlist items
-        document.querySelectorAll('.playlist-item').forEach(item => {
-            item.addEventListener('click', function () {
-                const videoUrl = this.getAttribute('data-video-url');
-
-                playVideo(videoUrl);
-            });
-        });
-
-        document.querySelector('.heart').addEventListener('click', function () {
-            this.classList.toggle('bi-heart');
-            this.classList.toggle('bi-heart-fill'); // Toggles to filled heart
         });
 
         const notifications = [
