@@ -436,17 +436,31 @@ body {
     cursor: pointer;
     padding: 10px;
     border-radius: 8px;
+    margin-right: 100px;
     background-color: #f8f9fa;
     transition: background-color 0.3s;
 }
 
 .playlist-item:hover {
-    background-color: #e9ecef;
+    background-color: #273c9800;
 }
 
 .playlist-item.active {
     background-color: #3f3f3f27;
     color: black;
-    border-color: rgba(13, 13, 13, 0.595);
+    background-color: #273c9815;
+    border-color: rgba(0, 0, 0, 0.104);
+}
 
+.nav-item button {
+    color: #273c98dc;
+    font-size: 21px;
+}
+
+#videoPlayer {
+    width: 76%;
+    height: auto;
+    border-radius: 22px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.105);
+    border: 2px solid white;
 }
