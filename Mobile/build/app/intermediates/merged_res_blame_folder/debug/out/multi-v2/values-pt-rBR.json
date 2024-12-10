@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.elmanasa.app-mergeDebugResources-25:/values-pt-rBR/values-pt-rBR.xml",
+            "outputFile": "com.example.elmanasa.app-mergeDebugResources-26:/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
                     "source": "C:\\Users\\MalakAlsayed\\.gradle\\caches\\transforms-3\\54a4cfbaad86b9ab2273ca8263e4a153\\transformed\\core-1.13.1\\res\\values-pt-rBR\\values-pt-rBR.xml",

@@ -17,17 +17,19 @@ com.example.elmanasa.app-jetified-annotation-experimental-1.4.0-15 C:\Users\Mala
 com.example.elmanasa.app-lifecycle-livedata-2.7.0-16 C:\Users\MalakAlsayed\.gradle\caches\transforms-3\c8104be4ee8049739ee8a5cef3e0da67\transformed\lifecycle-livedata-2.7.0\res
 com.example.elmanasa.app-jetified-savedstate-1.2.1-17 C:\Users\MalakAlsayed\.gradle\caches\transforms-3\e31bf8eb61c587fe74f52284c4da4d09\transformed\jetified-savedstate-1.2.1\res
 com.example.elmanasa.app-jetified-lifecycle-process-2.7.0-18 C:\Users\MalakAlsayed\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\res
-com.example.elmanasa.app-jetified-activity-1.9.2-19 C:\Users\MalakAlsayed\.gradle\caches\transforms-3\f9efe2d777e154cc78853466538b4822\transformed\jetified-activity-1.9.2\res
-com.example.elmanasa.app-debug-20 M:\Coding projects\Flutter\Elmansa2\Mobile\android\app\src\debug\res
-com.example.elmanasa.app-main-21 M:\Coding projects\Flutter\Elmansa2\Mobile\android\app\src\main\res
-com.example.elmanasa.app-pngs-22 M:\Coding projects\Flutter\Elmansa2\Mobile\build\app\generated\res\pngs\debug
-com.example.elmanasa.app-resValues-23 M:\Coding projects\Flutter\Elmansa2\Mobile\build\app\generated\res\resValues\debug
-com.example.elmanasa.app-rs-24 M:\Coding projects\Flutter\Elmansa2\Mobile\build\app\generated\res\rs\debug
-com.example.elmanasa.app-mergeDebugResources-25 M:\Coding projects\Flutter\Elmansa2\Mobile\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
-com.example.elmanasa.app-mergeDebugResources-26 M:\Coding projects\Flutter\Elmansa2\Mobile\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
-com.example.elmanasa.app-merged_res-27 M:\Coding projects\Flutter\Elmansa2\Mobile\build\app\intermediates\merged_res\debug
-com.example.elmanasa.app-packaged_res-28 M:\Coding projects\Flutter\Elmansa2\Mobile\build\flutter_native_splash\intermediates\packaged_res\debug
-com.example.elmanasa.app-packaged_res-29 M:\Coding projects\Flutter\Elmansa2\Mobile\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug
-com.example.elmanasa.app-packaged_res-30 M:\Coding projects\Flutter\Elmansa2\Mobile\build\image_picker_android\intermediates\packaged_res\debug
-com.example.elmanasa.app-packaged_res-31 M:\Coding projects\Flutter\Elmansa2\Mobile\build\path_provider_android\intermediates\packaged_res\debug
-com.example.elmanasa.app-packaged_res-32 M:\Coding projects\Flutter\Elmansa2\Mobile\build\permission_handler_android\intermediates\packaged_res\debug
+com.example.elmanasa.app-jetified-media3-exoplayer-1.4.1-19 C:\Users\MalakAlsayed\.gradle\caches\transforms-3\f6403bd67be0863a2447b00801240401\transformed\jetified-media3-exoplayer-1.4.1\res
+com.example.elmanasa.app-jetified-activity-1.9.2-20 C:\Users\MalakAlsayed\.gradle\caches\transforms-3\f9efe2d777e154cc78853466538b4822\transformed\jetified-activity-1.9.2\res
+com.example.elmanasa.app-debug-21 M:\Coding projects\Flutter\Elmansa2\Mobile\android\app\src\debug\res
+com.example.elmanasa.app-main-22 M:\Coding projects\Flutter\Elmansa2\Mobile\android\app\src\main\res
+com.example.elmanasa.app-pngs-23 M:\Coding projects\Flutter\Elmansa2\Mobile\build\app\generated\res\pngs\debug
+com.example.elmanasa.app-resValues-24 M:\Coding projects\Flutter\Elmansa2\Mobile\build\app\generated\res\resValues\debug
+com.example.elmanasa.app-rs-25 M:\Coding projects\Flutter\Elmansa2\Mobile\build\app\generated\res\rs\debug
+com.example.elmanasa.app-mergeDebugResources-26 M:\Coding projects\Flutter\Elmansa2\Mobile\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.elmanasa.app-mergeDebugResources-27 M:\Coding projects\Flutter\Elmansa2\Mobile\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.elmanasa.app-merged_res-28 M:\Coding projects\Flutter\Elmansa2\Mobile\build\app\intermediates\merged_res\debug
+com.example.elmanasa.app-packaged_res-29 M:\Coding projects\Flutter\Elmansa2\Mobile\build\flutter_native_splash\intermediates\packaged_res\debug
+com.example.elmanasa.app-packaged_res-30 M:\Coding projects\Flutter\Elmansa2\Mobile\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug
+com.example.elmanasa.app-packaged_res-31 M:\Coding projects\Flutter\Elmansa2\Mobile\build\image_picker_android\intermediates\packaged_res\debug
+com.example.elmanasa.app-packaged_res-32 M:\Coding projects\Flutter\Elmansa2\Mobile\build\path_provider_android\intermediates\packaged_res\debug
+com.example.elmanasa.app-packaged_res-33 M:\Coding projects\Flutter\Elmansa2\Mobile\build\permission_handler_android\intermediates\packaged_res\debug
+com.example.elmanasa.app-packaged_res-34 M:\Coding projects\Flutter\Elmansa2\Mobile\build\video_player_android\intermediates\packaged_res\debug

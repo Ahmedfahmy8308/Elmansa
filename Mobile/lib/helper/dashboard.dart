@@ -1,5 +1,6 @@
 //import 'package:elmanasa/view/screens/lesson.dart';
 import 'package:elmanasa/view/screens/Home.dart';
+import 'package:elmanasa/view/screens/lesson_home.dart';
 import 'package:elmanasa/view/screens/login.dart';
 import 'package:elmanasa/view/screens/notification.dart';
 import 'package:flutter/material.dart';
@@ -57,7 +58,7 @@ class Dashboard extends StatelessWidget {
             SizedBox(height: 20),
             Menu_Items("Lessons", Icons.menu_book, () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => HomeScreen()));
+                  MaterialPageRoute(builder: (context) => LessonHomeScreen()));
             }),
             SizedBox(height: 15),
             Menu_Items("Assignments", Icons.assignment, () {
