@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "V4b+FPVqZODUtH0LNyeOHQ1bsMx/bKpoeciVnMHy62M=",
+  "Source": "API",
+  "BasePath": "_content/API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "API\\wwwroot",
+      "Source": "API",
+      "ContentRoot": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\wwwroot\\StudentPhotos\\2412094794.png",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ahmed\\Desktop\\Elmansa\\Elmansa\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "StudentPhotos/2412094794.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\StudentPhotos\\2412094794.png"
+    }
+  ]
+}
