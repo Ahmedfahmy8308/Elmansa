@@ -1,5 +1,6 @@
 import 'dart:typed_data';
 
+import 'package:dio/dio.dart';
 import 'package:elmanasa/view/screens/public_page.dart';
 import 'package:elmanasa/view/screens/login.dart';
 import 'package:elmanasa/helper/utils.dart';
@@ -8,6 +9,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert'; // For JSON encoding/decoding
+import 'dart:io';
 
 //malak
 class RegisterScreen extends StatefulWidget {
@@ -18,54 +22,83 @@ class RegisterScreen extends StatefulWidget {
 class _RegisterScreenState extends State<RegisterScreen> {
   final _formRegisterKey = GlobalKey<FormState>();
   final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _fnameController = TextEditingController();
+  final TextEditingController _mnameController = TextEditingController();
+  final TextEditingController _lnameController = TextEditingController();
+  final TextEditingController _birthController = TextEditingController();
+  //final TextEditingController _photoController = TextEditingController();
+
   final TextEditingController _phoneController = TextEditingController();
   final TextEditingController _parentphoneController = TextEditingController();
   final TextEditingController _ssnController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _confirmPasswordController =
       TextEditingController();
+
   bool _isObscured = true;
   File? _selectedImage;
   Uint8List? _image;
-
-  // Make Sure the email is in the database
-  Future<bool> checkEmailExists(String email) async {
-    // Replace this with your backend logic
-    final List<String> allowedEmails = [
-      "example@domain.com",
-      "student@school.edu"
-    ];
-    return allowedEmails.contains(email);
-  }
-
-  pickImage() async {
+  Future<void> pickImage() async {
     PermissionStatus permissionStatus = await Permission.storage.request();
     if (permissionStatus.isGranted) {
       final ImagePicker _picker = ImagePicker();
       final XFile? image = await _picker.pickImage(source: ImageSource.gallery);
-
       if (image != null) {
-        return await image.readAsBytes();
+        setState(() {
+          _selectedImage = File(image.path);
+          _image = _selectedImage!.readAsBytesSync();
+        });
       } else {
-        print('No Image Selected');
-        return null;
+        ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Please select an image'),
+          backgroundColor: Colors.red,
+        ),
+      );
       }
     } else {
       print('Access denied');
-      return null;
     }
   }
 
-  void selectImage() async {
-    Uint8List? img = await pickImage();
-    if (img != null) {
-      setState(() {
-        _image = img;
-      });
-    } else {
-      print('No image was selected');
+Future<void> registerUser() async {
+  try {
+    // Create the MultipartFile instance only if an image is selected
+    MultipartFile? photo;
+    if (_selectedImage != null) {
+      photo = await MultipartFile.fromFile(
+        _selectedImage!.path,
+        filename: _selectedImage!.path.split('/').last, // Optional: specify filename
+      );
     }
+
+    final response = await Dio().post(
+      "http://localhost:5228/api/Account/Register",
+      data: {
+        "Student_email": _emailController.text,
+        "Student_password": _passwordController.text,
+        "Student_first_name": _fnameController.text,
+        "Student_Middel_name": _mnameController.text,
+        "Student_last_name": _lnameController.text,
+        "Student_number": _phoneController.text,
+        "Student_SSN": _ssnController.text,
+        "Student_date_birth": _birthController.text,
+        "Student_photo": photo,
+        "Student_guardian_number": _parentphoneController.text,
+      },
+    );
+
+    print(response.data);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Registration Successful')),
+    );
+  } catch (e) {
+    print('Error: ${e.toString()}');
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Registration Failed: ${e.toString()}')),
+    );
   }
+}
 
   @override
   Widget build(BuildContext context) {
@@ -74,7 +107,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
         backgroundColor: Color.fromARGB(255, 144, 158, 217),
         body: SingleChildScrollView(
           child: Container(
-            height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topLeft,
@@ -87,8 +119,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
             ),
             child: Center(
               child: Container(
-                // width: 400,
-                //  height: 870,
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -117,16 +147,21 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         children: [
                           _image != null
                               ? GestureDetector(
-                                  onTap: selectImage,
+                                  onTap: pickImage,
                                   child: CircleAvatar(
                                     radius: 50,
                                     backgroundColor:
                                         Color.fromARGB(255, 144, 158, 217),
-                                    backgroundImage: MemoryImage(_image!),
+                                     backgroundImage:
+                            _selectedImage != null ? FileImage(_selectedImage!) : null,
+                        child: _selectedImage == null
+                            ? Icon(Icons.camera_alt, size: 50, color: Colors.black)
+                            : null,
+                      
                                   ),
                                 )
                               : GestureDetector(
-                                  onTap: selectImage,
+                                  onTap: pickImage,
                                   child: CircleAvatar(
                                     radius: 50,
                                     child: Icon(Icons.camera_alt,
@@ -207,7 +242,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                   label_size: 14,
                                   validator: (value) {
                                     if (value == null || value.isEmpty) {
-                                      return 'Last name i\nrequired';
+                                      return 'Middle name i\nrequired';
                                     }
                                     return null;
                                   },
@@ -256,7 +291,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                 return 'Phone number is required';
                               } else if (value.length != 11) {
                                 return 'Phone number must be exactly 11 digits';
-                              } else if (value == _parentphoneController.text) {
+                              } else if (value == _phoneController.text) {
                                 return "Your Phone and your parent phone can't match";
                               }
                               return null;
@@ -329,44 +364,31 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             },
                           ),
                           SizedBox(height: 20),
-                          // ElevatedButton(
-                          //   onPressed: () async {
-                          //     if (_formRegisterKey.currentState!.validate()) {
-                          //       final emailExists =
-                          //           await checkEmailExists(_emailController.text);
-                          //       if (emailExists) {
-                          //         // Proceed with registration
-                          //         ScaffoldMessenger.of(context).showSnackBar(
-                          //           SnackBar(
-                          //               content: Text('Registration successful!')),
-                          //         );
-                          //       } else {
-                          //         ScaffoldMessenger.of(context).showSnackBar(
-                          //           SnackBar(
-                          //               content: Text('Email not found in database')),
-                          //         );
-                          //       }
-                          //     }
-                          //   },
-                          //   child: Text('Register'),
-                          // ),
+                         
                           Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Button('Sign Up', onPressed: () async {
                                 if (_formRegisterKey.currentState != null &&
                                     _formRegisterKey.currentState!.validate()) {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) => PublicPage()));
+                                      if (_selectedImage != null) {
+                                await registerUser();
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Please select an image'),
+          backgroundColor: Colors.red,
+        ),
+      );
+    }
                                 }
-                              })),
+                              })
+                              ),
                           RichTextt("Already have an account ? ", 'Sign In',
                               onSignUpTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => RegisterScreen()));
+                                    builder: (context) => LoginScreen()));
                           }),
                         ],
                       ),
