@@ -1,4 +1,26 @@
 
+API/.vs/
+API/bin/
+Front/.lh/
+Front/.vscode/
+Mobile/.dart_tool/
+Mobile/.idea/
+Mobile/.vscode/
+Mobile/android/
+Mobile/build/
+
+
+
+
+.vs/
+build/
+bin/
+obj/
+*.user
+*.suo
+*.log
+Thumbs.db
+.DS_Store
 *.config
 *.db
 *.db-shm
@@ -6,6 +28,8 @@
 *.v2
 *.dll
 *.bin
+
+
 API/.vs/API/copilot-chat/c6ea5adc/sessions/48b7ed7a-bf4a-4ade-b0af-995686535537
 API/.vs/API/FileContentIndex/4c039ec2-cee2-4857-aef9-b71286dd87c6.vsidx
 API/.vs/API/FileContentIndex/808c9e53-c54f-4e4d-9a8d-fa3c03954f7b.vsidx
