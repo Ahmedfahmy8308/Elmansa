@@ -167,20 +167,7 @@
 
     /**
      * Skills animation
-     */
-    let skilsContent = select('.skills-content');
-    if (skilsContent) {
-        new Waypoint({
-            element: skilsContent,
-            offset: '80%',
-            handler: function (direction) {
-                let progress = select('.progress .progress-bar', true);
-                progress.forEach((el) => {
-                    el.style.width = el.getAttribute('aria-valuenow') + '%'
-                });
-            }
-        })
-    }
+    /
 
     /**
      * Porfolio isotope and filter
@@ -253,17 +240,17 @@ const moveRight = () => {
     updatelevel();
 };
 
-/* // Event listeners for arrows
+// Event listeners for arrows
 arrowLeft.addEventListener('click', () => {
     currentSlide = currentSlide === 0 ? totalSlides - 1 : currentSlide - 1;
     updatelevel();
-}); */
+});
 
-/* arrowRight.addEventListener('click', () => {
+arrowRight.addEventListener('click', () => {
     currentSlide = (currentSlide + 1) % totalSlides;
     updatelevel();
 });
- */
+
 // Automatic sliding interval
 let autoSlide = setInterval(moveRight, 1500); // Slide every 2 seconds
 
@@ -273,9 +260,9 @@ const pauseAutoSlide = () => {
     autoSlide = setInterval(moveRight, 1500); // Restart after interaction
 };
 
-/* arrowLeft.addEventListener('click', pauseAutoSlide);
+arrowLeft.addEventListener('click', pauseAutoSlide);
 arrowRight.addEventListener('click', pauseAutoSlide);
- */
+
 // Initialize
 updatelevel();
 

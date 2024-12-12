@@ -12,7 +12,7 @@ body {
     font-family: 'Poppins';
     ;
     margin: 0;
-    background: linear-gradient(135deg, #fbfbfb, #4b39efb9);
+    background: linear-gradient(135deg, #fbfbfb, #465fcdc0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,7 @@ body {
     text-align: center;
 }
 
-/* 
+
 .icon-circle {
     width: 96px;
     height: 96px;
@@ -48,7 +48,7 @@ body {
     align-items: center;
     font-size: 48px;
 }
- */
+
 
 .switch-container {
     display: flex;
@@ -352,8 +352,7 @@ input:checked+.slider:before {
 }
 
 .login-button:hover {
-    background: #4b39ef57;
-    color: #fff;
+    background: #465fcd7a;
     transition: .5s;
 }
 
