@@ -168,6 +168,7 @@
                                 <i class="bi bi-lock-fill"></i>
                                 <input type="password" id="password2" name="password" placeholder="Create password"
                                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                                    title="Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one digit, and one special character (@$!%*?&)."
                                     required autocomplete="on">
                                 <label for="pass">Password</label>
                                 <button id="togglePassword2" type="button"> <i class="bi bi-eye-fill"
@@ -346,6 +347,12 @@
 
             return true; // Allow form submission
         }
+
+
+        flatpickr("#date", {
+            dateFormat: "m/d/Y",
+            allowInput: true,
+        });
 
     </script>
 </body>

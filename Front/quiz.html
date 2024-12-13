@@ -44,7 +44,7 @@
                         </li>
                     </a>
 
-                    <a href="quizes.html">
+                    <a href="quiz.html">
                         <li>
                             <i class="bi bi-question-square"></i>
                             <span>Quizes
@@ -125,61 +125,58 @@
 
                         <!-- Page Title -->
                         <h2 id="quiz">Quiz</h2>
-                        <h5 style="    margin-left: 40px;">Description</h5>
-                        <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing ept. Optio ut cupiditate dolores
-                            non
-                            fuga accusamus ad laboriosam vel nemo repellat, enim obcaecati et saepe inventore itaque
-                            iure expedita cumque quas.</p>
+                        <h5 style="margin-left: 40px; margin-top:10px">Description</h5>
+                        <ul id="desc">
+                            <li>Lesson: Mathematics & Statistics</li>
+                            <li>Duration: 60 Minutes</li>
+                        </ul>
 
-                        <h2 id="quiz" style="margin-left: 40px;">Time</h2>
-                        <div class="timer" id="timer" style="margin-left: 40px;">Time remaining: 60 Seconds</div>
-
-                        <h2 id="quiz" style="margin-left: 40px;">Questions</h2>
+                        <button class="start-btn">Start Attempt</button>
 
                         <form id="answer-form" data-aos="fade-down" data-aos-delay="400">
-                            <div class="form-container">
-                                <div class="question">
-                                    <h2>1. How many times a week?</h2>
-                                    <input type="radio" id="q1_option1" name="answer1" value="1-2 Times">
-                                    <label for="q1_option1">1-2 Times</label>
-                                    <input type="radio" id="q1_option2" name="answer1" value="2-3 Times">
-                                    <label for="q1_option2">2-3 Times</label>
-                                    <input type="radio" id="q1_option3" name="answer1" value="3-4 Times">
-                                    <label for="q1_option3">3-4 Times</label>
-                                    <input type="radio" id="q1_option4" name="answer1" value="4-5 Times">
-                                    <label for="q1_option4">4-5 Times</label>
-                                    </di>
-                                </div>
-
-                            </div>
-                            <div class="form-container">
-
-                                <div class="question">
-                                    <h2>2. How many hours a day?</h2>
-                                    <div class="inputs"><input type="radio" id="q2_option1" name="answer2"
-                                            value="1-2 Hours">
-                                        <label for="q2_option1">1-2 Hours</label>
-                                        <input type="radio" id="q2_option2" name="answer2" value="2-3 Hours">
-                                        <label for="q2_option2">2-3 Hours</label>
-                                        <input type="radio" id="q2_option3" name="answer2" value="3-4 Hours">
-                                        <label for="q2_option3">3-4 Hours</label>
-                                        <input type="radio" id="q2_option4" name="answer2" value="4-5 Hours">
-                                        <label for="q2_option4">4-5 Hours</label>
+                            <div class="questions">
+                                <h2 id="quiz" style="margin-left: 40px;">Questions</h2>
+                                <div class="form-container">
+                                    <div class="question">
+                                        <h2>1. How many times a week?</h2>
+                                        <input type="radio" id="q1_option1" name="answer1" value="1-2 Times">
+                                        <label for="q1_option1">1-2 Times</label>
+                                        <input type="radio" id="q1_option2" name="answer1" value="2-3 Times">
+                                        <label for="q1_option2">2-3 Times</label>
+                                        <input type="radio" id="q1_option3" name="answer1" value="3-4 Times">
+                                        <label for="q1_option3">3-4 Times</label>
+                                        <input type="radio" id="q1_option4" name="answer1" value="4-5 Times">
+                                        <label for="q1_option4">4-5 Times</label>
+                                        </di>
                                     </div>
                                 </div>
+                                <div class="form-container">
+
+                                    <div class="question">
+                                        <h2>2. How many hours a day?</h2>
+                                        <div class="inputs"><input type="radio" id="q2_option1" name="answer2"
+                                                value="1-2 Hours">
+                                            <label for="q2_option1">1-2 Hours</label>
+                                            <input type="radio" id="q2_option2" name="answer2" value="2-3 Hours">
+                                            <label for="q2_option2">2-3 Hours</label>
+                                            <input type="radio" id="q2_option3" name="answer2" value="3-4 Hours">
+                                            <label for="q2_option3">3-4 Hours</label>
+                                            <input type="radio" id="q2_option4" name="answer2" value="4-5 Hours">
+                                            <label for="q2_option4">4-5 Hours</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="submit-btn">Finish Attempt</button>
                             </div>
-                            <button type="submit" class="submit-btn">Submit</button>
                         </form>
                     </div>
+                    <div class="timer" id="timer" style="margin-left: 40px;">Time remaining: 60 Seconds</div>
 
                 </header>
             </div>
         </div>
         </header>
 
-    </div>
-    </div>
-    </div>
     </div>
 
     <script src="assets/vendor/aos/aos.js"></script>
@@ -194,39 +191,50 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const form = document.getElementById('answer-form');
+            const startBtn = document.querySelector('.start-btn');
             const submitBtn = document.querySelector('.submit-btn');
+            const questionsDiv = document.querySelector('.questions');
             const timerDisplay = document.getElementById('timer');
             let timeLeft = 60;
+            let countdown;
 
-            const countdown = setInterval(() => {
-                timeLeft--;
-                timerDisplay.textContent = `Time remaining: ${timeLeft} seconds`;
+            startBtn.addEventListener('click', function () {
+                questionsDiv.style.display = 'block';
+                timerDisplay.style.display = 'block';
+                startBtn.style.display = 'none';
+                countdown = setInterval(() => {
+                    timeLeft--;
+                    timerDisplay.textContent = `Time remaining: ${timeLeft} seconds`;
 
-                if (timeLeft <= 0) {
-                    clearInterval(countdown);
-                    timerDisplay.textContent = 'Time is up!';
-                    alert('Time is up!')
-                    submitBtn.disabled = true;
-                    submitBtn.classList.add('disabled');
-                }
-            }, 1000);
+                    if (timeLeft <= 0) {
+                        clearInterval(countdown);
+                        timerDisplay.textContent = 'Time is up!';
+                        submitBtn.disabled = true;
+                        submitBtn.classList.add('disabled');
+                    }
+                }, 1000);
+            });
 
             form.addEventListener('submit', function (event) {
                 event.preventDefault();
                 if (timeLeft > 0) {
                     const formData = new FormData(event.target);
-                    const answer1 = formData.get('answer1');
-                    const answer2 = formData.get('answer2');
-                    if (answer1 && answer2) {
+                    const frequency1 = formData.get('frequency1');
+                    const hours = formData.get('hours');
+                    if (frequency1 && hours) {
+                        console.log(`User selected: ${frequency1}, ${hours}`);
+                        alert(`You selected: ${frequency1} and ${hours}`);
                         // Here you can send the data to your server or save it locally
                     } else {
                         alert('Please select options for all questions.');
                     }
-                } else {
+                }
+                else {
                     alert('Time is up! You cannot submit the form.');
                 }
             });
         });
+
 
 
         const notifications = [
