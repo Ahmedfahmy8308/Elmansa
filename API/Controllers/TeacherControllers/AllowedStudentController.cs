@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace API.Controllers.Teacher
+namespace API.Controllers.TeacherControllers
 {
     [Route("api/[controller]")]
     [ApiController]

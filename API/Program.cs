@@ -1,5 +1,8 @@
 
 using API.Data;
+using API.Data.Repositories;
+using API.Repositories;
+using API.UOW;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -30,25 +33,27 @@ namespace API
 
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("MyPolicy", policy => {
+                options.AddPolicy("MyPolicy", policy =>
+                {
                     policy.AllowAnyOrigin()
                     .AllowAnyMethod()
                     .AllowAnyHeader();
 
                 });
-
-
             });
+            builder.Services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
+            builder.Services.AddScoped<StudentRepository>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             var context = builder.Services.BuildServiceProvider().GetService<AppDbContext>();
-            context.Database.EnsureCreated();
+            //context.Database.EnsureCreated();
+
             //context.Database.Migrate();
             //context.Database.EnsureDeleted();
-
             //var sql = context.Database.GenerateCreateScript();
             //Console.WriteLine(sql);
 

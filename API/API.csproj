@@ -26,7 +26,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Student\" />
     <Folder Include="wwwroot\Student_Image\" />
   </ItemGroup>
 
