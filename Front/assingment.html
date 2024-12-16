@@ -124,18 +124,100 @@
                     <i class="bi bi-search"></i>
                 </div>
 
-                <h1 id="subject" data-aos="fade-down" data-aos-delay=" 100">Mathematics</h1>
-                <div class="row" id="coursesList" data-aos="fade-left" data-aos-delay=" 100">
-                    <div class="col-md-5 mb-4 course-item" data-course-name="Lessons">
-                        <div class="info">
-                            <p>Mathematics</p>
-                            <h3><a href="lessons.html">Lessons</a></h3>
+                <h1 id="lessons" data-aos="fade-down" data-aos-delay=" 100">Assingments</h1>
+                <div class="row" id="lessonslist" data-aos="fade-left" data-aos-delay=" 100">
+
+
+                    <div class=" col-md-5 mb-4 lesson-item" data-lesson-name="Linear Algebra lesson 1">
+                        <div class=" col-md-5 mb-4 lesson-card">
+                            <div class="lesson-icon">
+                                <img src="assets/img/c8.jpg" alt="Books">
+                            </div>
+                            <div class="lesson-info">
+                                <div class="lesson-meta">
+                                    <span><i class="bi bi-check-all" style=" color:black"></i>
+
+                                        Assingment 1</span>
+                                    <span><i class="bi bi-cloud-upload-fill" style=" color:black"></i>
+                                        </i> Upload</span>
+                                </div>
+                                <h3 class="lesson-title"><a href="#" onclick="openModal()">Linear Algebra</a></h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-5 mb-4 course-item" data-course-name="Quizzes">
-                        <div class="info">
-                            <p>Mathematics</p>
-                            <h3><a href="quiz.html">Quizzes</a></h3>
+                    <div class=" col-md-5 mb-4 lesson-item" data-lesson-name="Linear Algebra lesson 1">
+                        <div class=" col-md-5 mb-4 lesson-card">
+                            <div class="lesson-icon">
+                                <img src="assets/img/c8.jpg" alt="Books">
+                            </div>
+                            <div class="lesson-info">
+                                <div class="lesson-meta">
+                                    <span><i class="bi bi-check-all" style=" color:black"></i>
+
+                                        Assingment 1</span>
+                                    <span><i class="bi bi-cloud-upload-fill" style=" color:black"></i>
+                                        </i> Upload</span>
+                                </div>
+                                <h3 class="lesson-title"><a href="#" onclick="openModal()">Linear Algebra</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-5 mb-4 lesson-item" data-lesson-name="Linear Algebra lesson 1">
+                        <div class=" col-md-5 mb-4 lesson-card">
+                            <div class="lesson-icon">
+                                <img src="assets/img/c8.jpg" alt="Books">
+                            </div>
+                            <div class="lesson-info">
+                                <div class="lesson-meta">
+                                    <span><i class="bi bi-check-all" style=" color:black"></i>
+
+                                        Assingment 1</span>
+                                    <span><i class="bi bi-cloud-upload-fill" style=" color:black"></i>
+                                        </i> Upload</span>
+                                </div>
+                                <h3 class="lesson-title"><a href="#" onclick="openModal()">Linear Algebra</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-5 mb-4 lesson-item" data-lesson-name="Linear Algebra lesson 1">
+                        <div class=" col-md-5 mb-4 lesson-card">
+                            <div class="lesson-icon">
+                                <img src="assets/img/c8.jpg" alt="Books">
+                            </div>
+                            <div class="lesson-info">
+                                <div class="lesson-meta">
+                                    <span><i class="bi bi-check-all" style=" color:black"></i>
+
+                                        Assingment 1</span>
+                                    <span><i class="bi bi-cloud-upload-fill" style=" color:black"></i>
+                                        </i> Upload</span>
+                                </div>
+                                <h3 class="lesson-title"><a href="#" onclick="openModal()">Linear Algebra</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="myModal" class="modal">
+                        <div class="assignment-container">
+                            <div class="assignment-header">Assignment: Linear Algebra Task</div>
+                            <div class="assignment-description">
+                                Please upload your solutions and work files related to the Linear Algebra Task.
+                                Ensure all calculations,
+                                steps, and final answers are included.
+                            </div>
+
+                            <!-- File Input Trigger -->
+                            <label for="fileInput" class="add-files">
+                                <i class="fa fa-plus"></i> Upload files
+                            </label>
+                            <input type="file" id="fileInput" multiple style="display: none">
+
+                            <!-- Uploaded Files List -->
+                            <div class="uploaded-files" id="uploadedFiles"></div>
+
+                            <!-- Submit Button -->
+                            <button class="submit-btn" id="submit-btn" onclick="submitAssignment()">Submit
+                                Assingment</button>
                         </div>
                     </div>
                 </div>
@@ -154,15 +236,15 @@
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script>
         const searchInput = document.getElementById('searchInput');
-        const coursesList = document.getElementById('coursesList');
-        const courseItems = coursesList.getElementsByClassName('course-item');
+        const coursesList = document.getElementById('lessonslist');
+        const courseItems = coursesList.getElementsByClassName('lesson-item');
 
         searchInput.addEventListener('input', function () {
             const searchText = searchInput.value.toLowerCase();
 
             // Loop through all courses and show/hide based on search
             Array.from(courseItems).forEach(function (courseItem) {
-                const courseName = courseItem.getAttribute('data-course-name').toLowerCase();
+                const courseName = courseItem.getAttribute('data-lesson-name').toLowerCase();
 
                 if (courseName.includes(searchText)) {
                     courseItem.style.display = '';
@@ -230,6 +312,87 @@
 
         // Initial render of notifications
         renderNotifications();
+
+        // Function to open the modal
+        function openModal() {
+            const modal = document.getElementById('myModal');
+            modal.style.display = 'flex'; // Show modal as flexbox to center content
+        }
+
+        // Close modal if user clicks outside the modal content
+        window.onclick = function (event) {
+            const modal = document.getElementById('myModal');
+            if (event.target === modal) {
+                modal.style.display = 'flex';
+            }
+        }
+
+        const fileInput = document.getElementById('fileInput');
+        const uploadedFilesContainer = document.getElementById('uploadedFiles');
+
+        // Handle File Selection
+        fileInput.addEventListener('change', (e) => {
+            const files = e.target.files;
+
+            for (const file of files) {
+                addFileItem(file);
+            }
+
+            fileInput.value = ""; // Reset file input
+        });
+
+        // Add File Item to the List
+        function addFileItem(file) {
+            const fileItem = document.createElement('div');
+            fileItem.classList.add('file-item');
+
+            fileItem.innerHTML = `
+                <div style="flex: 1;">
+                    <i class="fa fa-file"></i> ${file.name}
+                    <div class="file-progress">
+                        <div class="file-progress-bar" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <span class="remove-btn" onclick="removeFileItem(this)"><i class="fa fa-times"></i></span>
+                <span class="checkmark"><i class="fa fa-check-circle"></i></span>
+            `;
+
+            uploadedFilesContainer.appendChild(fileItem);
+
+            // Simulate File Upload Progress
+            const progressBar = fileItem.querySelector('.file-progress-bar');
+            const checkmark = fileItem.querySelector('.checkmark');
+            simulateFileUpload(progressBar, checkmark);
+        }
+
+        // Simulate Upload Progress
+        function simulateFileUpload(progressBar, checkmark) {
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += Math.random() * 20;
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(interval);
+                    checkmark.style.display = 'block'; // Show checkmark on completion
+                }
+                progressBar.style.width = progress + '%';
+            }, 300);
+        }
+
+        // Remove File Item
+        function removeFileItem(button) {
+            const fileItem = button.parentElement;
+            fileItem.remove();
+        }
+
+
+        function submitAssignment() {
+            const modal = document.getElementById('myModal');
+
+            // Alert to confirm successful submission
+            alert("Assignment submitted successfully!");
+            modal.style.display = 'none';
+        }
     </script>
 
 </body>
