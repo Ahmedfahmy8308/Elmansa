@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>ELMANASA</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/teacher.css">
+    <link rel="icon" href="assets/img/book (1).png" type="image/x-icon">
+
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<!-- BODY -->
+
+<body>
+    <!-- Public View -->
+    <div class="main-content">
+        <header id="header">
+            <div class="container d-flex align-items-center">
+
+                <h1 class="logo me-auto col-lg-1 d-flex flex-column pt-4"><a>ELMANASA</a>
+                </h1>
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a class="nav-link scrollto active" href="#courses">Material</a></li>
+                        <li><a class="nav-link scrollto active" href="#courses">Quizes</a></li>
+                        <li><a class="nav-link scrollto active" href="#active_student">Active Students</a></li>
+                        <!--                         <li><a class="nav-link scrollto active" href="#contact">Contact</a></li>
+                    -->
+
+
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+
+            </div>
+        </header>
+
+        <div class="container align-items-center" id="active_student">
+            <h2>Active Students</h2>
+            <div class="search-bar" data-aos="fade-down" data-aos-delay=" 100">
+                <input type="text" id="searchInput" placeholder="Search here...">
+                <i class="bi bi-search"></i>
+            </div>
+
+            <div class="row g-3">
+                <!-- Student 1 -->
+                <div class="col-md-12">
+                    <div class="student-card d-flex align-items-center p-3">
+                        <!-- Student Image -->
+                        <div class="student-image me-3">
+                            <img src="assets/img/Marwa.jpg" alt="Student 1">
+                        </div>
+                        <!-- Student Details -->
+                        <div class="student-details flex-grow-1">
+                            <div class="student-name" contenteditable="false">Marwa Abdelmonem</div>
+                            <div class="student-email text-muted mb-1" contenteditable="false">m2rwaaeldeeb721@gmail.com
+                            </div>
+                            <div class="student-info text-muted" contenteditable="false">grade: 90% </div>
+                            <div class="student-info2 text-muted" contenteditable="false">Rank : 1000 </div>
+                            <div class="status-text mt-1" id="status-1"></div>
+                        </div>
+                        <!-- Action Buttons -->
+                        <div class="actions d-flex align-items-center gap-2">
+                            <a class=" edit" onclick="editDetails(this)">
+                                <i class="bi bi-pencil-fill"></i>
+                            </a>
+                            <button class="btn btn-danger btn-sm"
+                                onclick="deleteStudent(this, 'status-1')">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <!-- Student 2 -->
+                <div class="col-md-12">
+                    <div class="student-card d-flex align-items-center p-3">
+                        <!-- Student Image -->
+                        <div class="student-image me-3">
+                            <img src="assets/img/Malak.jpg" alt="Student 2">
+                        </div>
+                        <!-- Student Details -->
+                        <div class="student-details flex-grow-1">
+                            <div class="student-name" contenteditable="false">Malak Alsayed</div>
+                            <div class="student-email text-muted mb-1" contenteditable="false">malakalsayed@gmail.com
+                            </div>
+                            <div class="student-info text-muted" contenteditable="false">grade: 92% </div>
+                            <div class="student-info2 text-muted" contenteditable="false">Rank : 1050 </div>
+                            <div class="status-text mt-1" id="status-1"></div>
+                            <div class="status-text mt-1" id="status-2"></div>
+                        </div>
+                        <!-- Action Buttons -->
+                        <div class="actions d-flex align-items-center gap-2">
+                            <a class=" edit" onclick="editDetails(this)">
+                                <i class="bi bi-pencil-fill"></i>
+                            </a>
+                            <button class="btn btn-danger btn-sm"
+                                onclick="deleteStudent(this, 'status-2')">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <!-- Student 2 -->
+                <div class="col-md-12">
+                    <div class="student-card d-flex align-items-center p-3">
+                        <!-- Student Image -->
+                        <div class="student-image me-3">
+                            <img src="assets/img/Ahmed.jpg" alt="Student 2">
+                        </div>
+                        <!-- Student Details -->
+                        <div class="student-details flex-grow-1">
+                            <div class="student-name" contenteditable="false">Ahmed Abdelaziz</div>
+                            <div class="student-email text-muted mb-1" contenteditable="false">fhmy8308@gmail.com
+                            </div>
+                            <div class="student-info text-muted" contenteditable="false">grade: 94% </div>
+                            <div class="student-info2 text-muted" contenteditable="false">Rank : 1100 </div>
+                            <div class="status-text mt-1" id="status-1"></div>
+                            <div class="status-text mt-1" id="status-2"></div>
+                        </div>
+                        <!-- Action Buttons -->
+                        <div class="actions d-flex align-items-center gap-2">
+                            <a class=" edit" onclick="editDetails(this)">
+                                <i class="bi bi-pencil-fill"></i>
+                            </a>
+                            <button class="btn btn-danger btn-sm"
+                                onclick="deleteStudent(this, 'status-2')">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3">
+                <!-- Student 2 -->
+                <div class="col-md-12">
+                    <div class="student-card d-flex align-items-center p-3">
+                        <!-- Student Image -->
+                        <div class="student-image me-3">
+                            <img src="assets/img/Mohsen.jpg" alt="Student 2">
+                        </div>
+                        <!-- Student Details -->
+                        <div class="student-details flex-grow-1">
+                            <div class="student-name" student-name="Mohamed Mohsen" contenteditable="false">Mohamed
+                                Mohsen</div>
+                            <div class="student-email text-muted mb-1" contenteditable="false">
+                                mohamedmohsen1970@gmail.com
+                            </div>
+                            <div class="student-info text-muted" contenteditable="false">grade: 94% </div>
+                            <div class="student-info2 text-muted" contenteditable="false">Rank : 1150 </div>
+                            <div class="status-text mt-1" id="status-1"></div>
+                            <div class="status-text mt-1" id="status-2"></div>
+                        </div>
+                        <!-- Action Buttons -->
+                        <div class="actions d-flex align-items-center gap-2">
+                            <a class=" edit" onclick="editDetails(this)">
+                                <i class="bi bi-pencil-fill"></i>
+                            </a>
+                            <button class="btn btn-danger btn-sm"
+                                onclick="deleteStudent(this, 'status-2')">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script> function editDetails(button) {
+            const card = button.closest('.student-card');
+            const name = card.querySelector('.student-name');
+            const email = card.querySelector('.student-email');
+            const info = card.querySelector('.student-info');
+            const info2 = card.querySelector('.student-info2');
+
+            const editable = name.contentEditable === "true";
+            name.contentEditable = !editable;
+            email.contentEditable = !editable;
+            info.contentEditable = !editable;
+            info2.contentEditable = !editable;
+
+            button.innerHTML = editable ? '<i class="bi bi-pencil-fill"></i>' : '<i class="bi bi-check2-all"></i>';
+        }
+
+        // Function to delete a student and show 'Deleted' status
+        function deleteStudent(button, statusId) {
+            const statusText = document.getElementById(statusId);
+            statusText.textContent = "Deleted";
+            statusText.className = "status-text deleted";
+
+            // Add restore button after delete
+            const restoreBtn = document.createElement('button');
+            restoreBtn.textContent = "Restore";
+            restoreBtn.className = "btn btn-sm btn-restore ms-2";
+            restoreBtn.onclick = function () {
+                restoreStudent(statusId, restoreBtn, button);
+            };
+
+            button.parentElement.appendChild(restoreBtn);
+            button.disabled = true; // Disable delete button
+        }
+
+        // Function to restore a student and show 'Restored' status
+        function restoreStudent(statusId, restoreBtn, deleteBtn) {
+            const statusText = document.getElementById(statusId);
+            statusText.textContent = "Restored";
+            statusText.className = "status-text restored";
+
+            restoreBtn.remove(); // Remove restore button
+            deleteBtn.disabled = false; // Re-enable delete button
+        }
+
+        const searchInput = document.getElementById('searchInput');
+        const studentsList = document.getElementById('active_student');
+        const studentItem = studentsList.getElementsByClassName('student-name');
+
+        searchInput.addEventListener('input', function () {
+            const searchText = searchInput.value.toLowerCase();
+
+            // Loop through all courses and show/hide based on search
+            Array.from(studentItem).forEach(function (studentItem) {
+                const studentName = studentItem.getAttribute('student-name').toLowerCase();
+
+                if (studentName.includes(searchText)) {
+                    studentItem.style.display = '';
+                } else {
+                    studentItem.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

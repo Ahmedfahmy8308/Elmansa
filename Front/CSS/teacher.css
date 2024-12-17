@@ -1,0 +1,116 @@
+@import url('../assets/fonts/Poppins/Poppins-Thin.ttf');
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Medium.ttf') format('woff'),
+        url('../assets/fonts/Poppins/Poppins-Thin.ttf') format('woff1');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#active_student h2 {
+    margin: 0 0 10px 0;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #273c98c5;
+    text-align: center;
+}
+
+
+
+.student-card {
+    border: 1px solid #ece8e85a;
+    border-radius: 10px;
+    background: #ffffff;
+    display: flex;
+    margin-left: 15%;
+    width: 75%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.student-image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.student-name {
+    color: #273c98;
+    font-weight: 700;
+}
+
+.status-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.deleted {
+    color: red;
+}
+
+.restored {
+    color: green;
+}
+
+.btn-restore {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-restore:hover {
+    background-color: #218838;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.actions {
+    margin-left: 90px;
+}
+
+
+.search-bar {
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #edeafcd1;
+    border-radius: 35px;
+    margin-bottom: 35px;
+    margin-left: 11%;
+    border: none;
+    display: flex;
+    width: 85%;
+    align-items: center;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    flex-grow: 1;
+    outline: none;
+    color: rgba(0, 0, 0, 0.773);
+    font-size: 14px;
+}
+
+.search-bar i {
+    color: #888;
+    font-size: 16px;
+}
