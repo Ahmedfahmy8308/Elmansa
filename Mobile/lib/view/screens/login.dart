@@ -1,3 +1,4 @@
+import 'package:elmanasa/view/screens/Home.dart';
 import 'package:elmanasa/view/screens/public_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -220,7 +221,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => PublicPage()));
+                                  builder: (context) => HomeScreen()));
                         }),
                       ),
                       RichTextt("Don't have an account yet? ", 'Sign Up',

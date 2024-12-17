@@ -1,6 +1,7 @@
 // import 'package:elmanasa/helper/notification.dart';
 import 'package:elmanasa/helper/dashboard.dart';
 import 'package:elmanasa/view/screens/Home.dart';
+import 'package:elmanasa/view/screens/lesson.dart';
 // import 'package:elmanasa/view/screens/lesson.dart';
 // import 'package:elmanasa/view/screens/quiz.dart';
 
@@ -30,7 +31,7 @@ class _LessonHomeScreenState extends State<LessonHomeScreen>
     fetchMockData();
     _animationController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 300),
+      duration: Duration(milliseconds: 30),
     );
 
     _slideAnimation = Tween<Offset>(
@@ -43,7 +44,7 @@ class _LessonHomeScreenState extends State<LessonHomeScreen>
   }
 
   Future<void> fetchMockData() async {
-    await Future.delayed(Duration(seconds: 2)); // Simulate network delay
+    await Future.delayed(Duration(seconds: 1)); // Simulate network delay
 
     // Mock data
     setState(() {
@@ -205,7 +206,7 @@ class _LessonHomeScreenState extends State<LessonHomeScreen>
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => LessonHomeScreen()),
+                                  builder: (context) => LessonPage()),
                             );
                           },
                           child: Padding(
