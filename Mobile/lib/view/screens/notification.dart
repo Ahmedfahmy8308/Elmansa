@@ -14,7 +14,7 @@ class _NotificationButtonState extends State<NotificationButton> {
   // Method to fetch notifications (API integration placeholder)
   Future<void> fetchNotifications() async {
     // Simulate API call
-    await Future.delayed(Duration(seconds: 1));
+    await Future.delayed(Duration(seconds: 2));
     setState(() {
       notifications = [
         {

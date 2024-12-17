@@ -1,7 +1,6 @@
 // import 'package:elmanasa/helper/notification.dart';
 import 'package:elmanasa/helper/dashboard.dart';
 import 'package:elmanasa/view/screens/lesson_home.dart';
-import 'package:elmanasa/view/screens/notification.dart';
 import 'package:elmanasa/view/screens/quiz_home.dart';
 // import 'package:elmanasa/view/screens/lesson.dart';
 // import 'package:elmanasa/view/screens/quiz.dart';
@@ -41,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
     fetchMockData();
     _animationController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 30),
+      duration: Duration(milliseconds: 300),
     );
 
     _slideAnimation = Tween<Offset>(
@@ -54,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   }
 
   Future<void> fetchMockData() async {
-    await Future.delayed(Duration(seconds: 1)); // Simulate network delay
+    await Future.delayed(Duration(seconds: 2)); // Simulate network delay
 
     // Mock data
     setState(() {
@@ -126,20 +125,16 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                         onPressed: _toggleDashboard,
                                       ),
                                     ),
-                                    Row(
-                                      children: [NotificationButton(),
-                                        Padding(
-                                          padding: const EdgeInsets.only(top: 7),
-                                          child: CircleAvatar(
-                                            radius: 25,
-                                            backgroundImage: photoUrl != null &&
-                                                    photoUrl!.isNotEmpty
-                                                ? AssetImage(photoUrl!)
-                                                : AssetImage('assets/images/me.jpg')
-                                                    as ImageProvider,
-                                          ),
-                                        ),
-                                      ],
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 7),
+                                      child: CircleAvatar(
+                                        radius: 25,
+                                        backgroundImage: photoUrl != null &&
+                                                photoUrl!.isNotEmpty
+                                            ? AssetImage(photoUrl!)
+                                            : AssetImage('assets/images/me.jpg')
+                                                as ImageProvider,
+                                      ),
                                     ),
                                   ],
                                 ),

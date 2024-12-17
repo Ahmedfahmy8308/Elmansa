@@ -10,55 +10,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 class Dashboard extends StatelessWidget {
   final VoidCallback onClose;
-  List<Map<String, dynamic>> notifications = [
-    
-        {
-          "ID": 1,
-          "NotificationId": 1,
-          "Title": "New Assignment Posted",
-          "NotificationContent": "Check the new assignment in Math.",
-          "CreationDate": "2024-12-01",
-          "IsRead": false,
-        },
-        {
-          "ID": 2,
-          "NotificationId": 2,
-          "Title": "Exam Schedule Updated",
-          "NotificationContent":
-              "The exam schedule for Physics has been updated.",
-          "CreationDate": "2024-12-02",
-          "IsRead": false,
-        },
-        {
-          "ID": 2,
-          "NotificationId": 2,
-          "Title": "Exam Schedule Updated",
-          "NotificationContent":
-              "The exam schedule for Physics has been updated.",
-          "CreationDate": "2024-12-02",
-          "IsRead": true,
-        },
-        {
-          "ID": 2,
-          "NotificationId": 2,
-          "Title": "Exam Schedule Updated",
-          "NotificationContent":
-              "The exam schedule for Physics has been updated.",
-          "CreationDate": "2024-12-02",
-          "IsRead": true,
-        },
-        {
-          "ID": 2,
-          "NotificationId": 2,
-          "Title": "Exam Schedule Updated",
-          "NotificationContent":
-              "The exam schedule for Physics has been updated.",
-          "CreationDate": "2024-12-02",
-          "IsRead": true,
-        },
-      ];
 
-   Dashboard({Key? key, required this.onClose}) : super(key: key);
+  const Dashboard({Key? key, required this.onClose}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -118,11 +71,8 @@ class Dashboard extends StatelessWidget {
               height: 15,
             ),
             Menu_Items("Quizzes", Icons.quiz, () {
-               Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => NotificationScreen(notifications)),
-            );;
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => QuizHomePage()));
             }),
             SizedBox(
               height: 15,
@@ -131,7 +81,7 @@ class Dashboard extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => NotificationScreen(notifications),
+                    builder: (context) => NotificationButton(),
                   ));
             }),
             SizedBox(
@@ -149,7 +99,7 @@ class Dashboard extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => HomeScreen()));
             }),
             SizedBox(
-              height: 220,
+              height: 280,
             ),
             Menu_Items("Contact Us", Icons.help, () {
               Navigator.push(context,

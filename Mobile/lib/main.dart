@@ -27,7 +27,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "ELMANASA",
-      
       home: PublicPage(),
     );
   }

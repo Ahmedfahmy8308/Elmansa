@@ -33,7 +33,7 @@ class _QuizHomePageState extends State<QuizHomePage>
     fetchMockData();
     _animationController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 30),
+      duration: Duration(milliseconds: 300),
     );
 
     _slideAnimation = Tween<Offset>(

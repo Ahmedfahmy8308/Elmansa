@@ -31,7 +31,7 @@ class _LessonHomeScreenState extends State<LessonHomeScreen>
     fetchMockData();
     _animationController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 30),
+      duration: Duration(milliseconds: 300),
     );
 
     _slideAnimation = Tween<Offset>(
@@ -44,7 +44,7 @@ class _LessonHomeScreenState extends State<LessonHomeScreen>
   }
 
   Future<void> fetchMockData() async {
-    await Future.delayed(Duration(seconds: 1)); // Simulate network delay
+    await Future.delayed(Duration(seconds: 2)); // Simulate network delay
 
     // Mock data
     setState(() {
