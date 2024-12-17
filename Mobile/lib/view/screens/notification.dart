@@ -6,18 +6,7 @@ class NotificationButton extends StatefulWidget {
 }
 
 class _NotificationButtonState extends State<NotificationButton> {
-  List<Map<String, dynamic>> notifications = [];
-
-  final int studentId = 1;
-  final int groupId = 1;
-
-  // Method to fetch notifications (API integration placeholder)
-  Future<void> fetchNotifications() async {
-    // Simulate API call
-    await Future.delayed(Duration(seconds: 2));
-    setState(() {
-      notifications = [
-        {
+   List<Map<String, dynamic>> notifications = [ {
           "ID": 1,
           "NotificationId": 1,
           "Title": "New Assignment Posted",
@@ -60,10 +49,13 @@ class _NotificationButtonState extends State<NotificationButton> {
               "The exam schedule for Physics has been updated.",
           "CreationDate": "2024-12-02",
           "IsRead": true,
-        },
-      ];
-    });
-  }
+        },];
+
+  final int studentId = 1;
+  final int groupId = 1;
+
+  // Method to fetch notifications (API integration placeholder)
+ 
 
   // Count unread notifications
   int get unreadCount {
@@ -75,7 +67,7 @@ class _NotificationButtonState extends State<NotificationButton> {
   @override
   void initState() {
     super.initState();
-    fetchNotifications(); // Fetch notifications on load
+    // Fetch notifications on load
   }
 
   @override

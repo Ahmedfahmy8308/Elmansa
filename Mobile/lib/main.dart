@@ -1,7 +1,9 @@
 import 'package:elmanasa/helper/switch.dart';
 import 'package:elmanasa/view/screens/Home.dart';
+import 'package:elmanasa/view/screens/accountscreen.dart';
 import 'package:elmanasa/view/screens/assignement.dart';
 import 'package:elmanasa/view/screens/attendance.dart';
+import 'package:elmanasa/view/screens/contact_us.dart';
 import 'package:elmanasa/view/screens/lesson.dart';
 import 'package:elmanasa/view/screens/lesson_home.dart';
 import 'package:elmanasa/view/screens/quiz.dart';
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "ELMANASA",
-      home: PublicPage(),
+      home: ContactFormApp(),
     );
   }
 }
