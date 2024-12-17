@@ -17,7 +17,6 @@ Some features are being designed, while others are in the testing phase.
 - **Front**: Teacher updates and frontend components (HTML, Bootstrap, jQuery).  
 - **Mobile**: Mobile app being developed with **Flutter**.  
 - **SQL**: Database scripts using **SQL Server**.  
-- **.gitignore**: Excluded files from version control.  
 - **req.txt**: Project requirements and dependencies.  
 
 ---
@@ -52,4 +51,4 @@ Some features are being designed, while others are in the testing phase.
 ## ⚙️ Installation (For Developers)  
 1. Clone the repository:  
    ```bash
-   git clone <repository-link>
+   git clone <https://github.com/Ahmedfahmy8308/Elmansa>
