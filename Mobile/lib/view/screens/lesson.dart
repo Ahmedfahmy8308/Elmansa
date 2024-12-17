@@ -8,7 +8,7 @@ class LessonPage extends StatefulWidget {
 
 class _LessonPageState extends State<LessonPage>
     with SingleTickerProviderStateMixin {
-      bool isFavorite = false; // State to track the favorite status
+  bool isFavorite = false; // State to track the favorite status
   late TabController _tabController;
 
   @override
@@ -41,7 +41,7 @@ class _LessonPageState extends State<LessonPage>
                   IconButton(
                     icon: Icon(Icons.arrow_back),
                     onPressed: () {
-                       Navigator.push(
+                      Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) => LessonHomeScreen()),
@@ -58,7 +58,7 @@ class _LessonPageState extends State<LessonPage>
                       ),
                     ),
                   ),
-                    IconButton(
+                  IconButton(
                     icon: Icon(
                       isFavorite ? Icons.favorite : Icons.favorite_border,
                       color: isFavorite ? Colors.red : Colors.black,
@@ -68,7 +68,6 @@ class _LessonPageState extends State<LessonPage>
                         isFavorite = !isFavorite; // Toggle state
                       });
                     },
-                  
                   ),
                 ],
               ),
@@ -173,31 +172,6 @@ class _LessonPageState extends State<LessonPage>
                     },
                   ),
                 ],
-              ),
-            ),
-
-            // Purchase Button
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 106, 175, 255),
-                    padding: const EdgeInsets.symmetric(vertical: 16.0),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                  ),
-                  child: Text(
-                    "Purchase Only - \$28",
-                    style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black),
-                  ),
-                ),
               ),
             ),
           ],
