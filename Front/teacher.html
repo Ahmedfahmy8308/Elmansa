@@ -35,7 +35,7 @@
                 <nav id="navbar" class="navbar">
                     <ul>
                         <li><a class="nav-link scrollto active" href="#courses">Material</a></li>
-                        <li><a class="nav-link scrollto active" href="#courses">Quizes</a></li>
+                        <li><a class="nav-link scrollto active" href="#quiz">Quizes</a></li>
                         <li><a class="nav-link scrollto active" href="#active_student">Active Students</a></li>
                         <!--                         <li><a class="nav-link scrollto active" href="#contact">Contact</a></li>
                     -->
@@ -48,6 +48,146 @@
             </div>
         </header>
 
+
+        <div id="start" class="d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                        data-aos-delay="200" data-aos="fade-right">
+                        <h2 class="welcome-tag">Welcome To Your Online Courses Platform</h2>
+                        <p>Explore a variety of featuers that will boast your teaching level and spread your knowledge
+                            to huge spot of people.</p>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2  start-img" data-aos="fade-up" data-aos-delay="200">
+                        <img src="assets/img/index-image.png" class="img-fluid animated" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- ***********************************  Add Quiz *******************************************-->
+
+        <div class="container quiz" id="active_student">
+            <div class="container mt-5 add-quiz" id="quiz">
+                <h2 class="text-center mb-4">Quiz Management</h2>
+                <!-- Add New Quiz Button -->
+                <div class="text-center mb-3">
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#addQuizModal">
+                        <i class="bi bi-plus-circle"></i> Add New Quiz
+                    </button>
+                </div>
+
+                <!-- Quiz Modal -->
+                <div class="modal fade" id="addQuizModal" tabindex="-1" aria-labelledby="addQuizModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="addQuizModalLabel">Add New Quiz</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                    style="background-color:rgba(255, 255, 255, 0.047);"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="quizForm">
+                                    <!-- Lesson and Duration -->
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label for="lessonInput" class="form-label">Lesson</label>
+                                            <input type="text" class="form-control" id="lessonInput"
+                                                placeholder="Enter lesson name" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="durationInput" class="form-label">Duration (in minutes)</label>
+                                            <input type="number" class="form-control" id="durationInput"
+                                                placeholder="Enter duration" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- Questions Section -->
+                                    <h5>Questions</h5>
+                                    <div id="questionsContainer">
+                                        <!-- Default Question Block -->
+                                        <div class="question-block mb-4">
+                                            <label class="form-label">Question</label>
+                                            <input type="text" class="form-control mb-2 question-input"
+                                                placeholder="Enter question" required>
+
+                                            <div class="row">
+                                                <div class="col-md-6 mb-2">
+                                                    <input type="text" class="form-control choice-input"
+                                                        placeholder="Choice A" required>
+                                                </div>
+                                                <div class="col-md-6 mb-2">
+                                                    <input type="text" class="form-control choice-input"
+                                                        placeholder="Choice B" required>
+                                                </div>
+                                                <div class="col-md-6 mb-2">
+                                                    <input type="text" class="form-control choice-input"
+                                                        placeholder="Choice C" required>
+                                                </div>
+                                                <div class="col-md-6 mb-2">
+                                                    <input type="text" class="form-control choice-input"
+                                                        placeholder="Choice D" required>
+                                                </div>
+                                            </div>
+
+                                            <label class="form-label">Correct Answer</label>
+                                            <select class="form-select correct-answer-input" required>
+                                                <option value="" disabled selected style="">Select the correct answer
+                                                </option>
+                                                <option value="A">A</option>
+                                                <option value="B">B</option>
+                                                <option value="C">C</option>
+                                                <option value="D">D</option>
+                                            </select>
+                                            <hr>
+                                        </div>
+                                    </div>
+
+                                    <!-- Add New Question Button -->
+                                    <button type="button" class="btn btn-info btn-sm mb-3 add_new"
+                                        onclick="addNewQuestion()">
+                                        <i class="bi bi-plus-circle"></i> Add Another Question
+                                    </button>
+
+                                    <!-- Submit Button -->
+                                    <div class="text-end">
+                                        <button type="submit" class="btn btn-success">Save Quiz</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder to Display Quiz Data -->
+                <div id="quizList" class="mt-4">
+                    <h3>Quizzes</h3>
+                    <ul class="list-group" id="quizDisplay"></ul>
+                </div>
+            </div>
+
+            <div class="toast-container">
+                <div id="quizToast" class="toast align-items-center text-bg-success border-0" role="alert"
+                    aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                        <div class="toast-body">
+                            Quiz has been successfully published!
+                        </div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                            aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- ***********************************  Add Quiz *******************************************-->
+
+        <!--  Active students   -->
         <div class="container align-items-center" id="active_student">
             <h2>Active Students</h2>
             <div class="search-bar" data-aos="fade-down" data-aos-delay=" 100">
@@ -66,7 +206,8 @@
                         <!-- Student Details -->
                         <div class="student-details flex-grow-1">
                             <div class="student-name" contenteditable="false">Marwa Abdelmonem</div>
-                            <div class="student-email text-muted mb-1" contenteditable="false">m2rwaaeldeeb721@gmail.com
+                            <div class="student-email text-muted mb-1" contenteditable="false">
+                                m2rwaaeldeeb721@gmail.com
                             </div>
                             <div class="student-info text-muted" contenteditable="false">grade: 90% </div>
                             <div class="student-info2 text-muted" contenteditable="false">Rank : 1000 </div>
@@ -95,7 +236,8 @@
                         <!-- Student Details -->
                         <div class="student-details flex-grow-1">
                             <div class="student-name" contenteditable="false">Malak Alsayed</div>
-                            <div class="student-email text-muted mb-1" contenteditable="false">malakalsayed@gmail.com
+                            <div class="student-email text-muted mb-1" contenteditable="false">
+                                malakalsayed@gmail.com
                             </div>
                             <div class="student-info text-muted" contenteditable="false">grade: 92% </div>
                             <div class="student-info2 text-muted" contenteditable="false">Rank : 1050 </div>
@@ -209,7 +351,13 @@
             // Add restore button after delete
             const restoreBtn = document.createElement('button');
             restoreBtn.textContent = "Restore";
-            restoreBtn.className = "btn btn-sm btn-restore ms-2";
+            restoreBtn.textContent = "Restore";
+            restoreBtn.style.backgroundColor = "#339b20";
+            restoreBtn.style.color = "white";
+            restoreBtn.style.border = "none";
+            restoreBtn.style.padding = "5px 10px";
+            restoreBtn.style.borderRadius = "5px";
+            restoreBtn.style.cursor = "pointer"; restoreBtn.className = "btn btn-sm btn-restore ms-2";
             restoreBtn.onclick = function () {
                 restoreStudent(statusId, restoreBtn, button);
             };
@@ -246,6 +394,100 @@
                 }
             });
         });
+
+
+
+
+        function addNewQuestion() {
+            const questionsContainer = document.getElementById('questionsContainer');
+            const questionHTML = `
+                <div class="question-block mb-4">
+                    <label class="form-label">Question</label>
+                    <input type="text" class="form-control mb-2 question-input" placeholder="Enter question" required>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <input type="text" class="form-control choice-input" placeholder="Choice A" required>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <input type="text" class="form-control choice-input" placeholder="Choice B" required>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <input type="text" class="form-control choice-input" placeholder="Choice C" required>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <input type="text" class="form-control choice-input" placeholder="Choice D" required>
+                        </div>
+                    </div>
+
+                    <label class="form-label">Correct Answer</label>
+                    <select class="form-select correct-answer-input" required>
+                        <option value="" disabled selected>Select the correct answer</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                    </select>
+                    <hr>
+                </div>
+            `;
+            questionsContainer.insertAdjacentHTML('beforeend', questionHTML);
+        }
+
+        // Handle Quiz Form Submission
+        document.getElementById('quizForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get Lesson and Duration
+            const lesson = document.getElementById('lessonInput').value;
+            const duration = document.getElementById('durationInput').value;
+
+            // Collect Questions
+            const questions = [];
+            document.querySelectorAll('.question-block').forEach(block => {
+                const question = block.querySelector('.question-input').value;
+                const choices = Array.from(block.querySelectorAll('.choice-input')).map(input => input.value);
+                const correctAnswer = block.querySelector('.correct-answer-input').value;
+
+                questions.push({ question, choices, correctAnswer });
+            });
+
+            const quizToast = new bootstrap.Toast(document.getElementById('quizToast'));
+            quizToast.show();
+
+
+            // Display Quiz Data
+            const quizDisplay = document.getElementById('quizDisplay');
+            let quizHTML = `
+                <li class="list-group-item">
+                    <strong>Lesson:</strong> ${lesson} | <strong>Duration:</strong> ${duration} minutes <br>
+                    <strong>Questions:</strong>
+                    <ul>
+            `;
+            questions.forEach((q, index) => {
+                quizHTML += `
+                    <li>
+                        Q${index + 1}: ${q.question} <br>
+                        Choices: A) ${q.choices[0]}, B) ${q.choices[1]}, C) ${q.choices[2]}, D) ${q.choices[3]} <br>
+                        Correct Answer: ${q.correctAnswer}
+                    </li>
+                `;
+            });
+            quizHTML += '</ul></li>';
+
+            quizDisplay.insertAdjacentHTML('beforeend', quizHTML);
+
+            // Reset Form and Close Modal
+            document.getElementById('quizForm').reset();
+            document.getElementById('questionsContainer').innerHTML = '';
+            addNewQuestion(); // Add back one question block
+            const modalElement = document.getElementById('addQuizModal');
+            const modal = bootstrap.Modal.getInstance(modalElement);
+            modal.hide();
+        });
+
+        // Add Initial Question Block
+        addNewQuestion();
     </script>
 </body>
 
