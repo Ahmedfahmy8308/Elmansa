@@ -1,7 +1,13 @@
 import 'package:elmanasa/helper/switch.dart';
 import 'package:elmanasa/view/screens/Home.dart';
+import 'package:elmanasa/view/screens/accountscreen.dart';
+import 'package:elmanasa/view/screens/assignement.dart';
+import 'package:elmanasa/view/screens/attendance.dart';
+import 'package:elmanasa/view/screens/contact_us.dart';
 import 'package:elmanasa/view/screens/lesson.dart';
 import 'package:elmanasa/view/screens/lesson_home.dart';
+import 'package:elmanasa/view/screens/quiz.dart';
+import 'package:elmanasa/view/screens/quiz_home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -23,7 +29,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "ELMANASA",
-      home: RegisterScreen(),
+      home: ContactFormApp(),
     );
   }
 }

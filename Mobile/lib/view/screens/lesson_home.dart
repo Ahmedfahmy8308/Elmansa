@@ -1,6 +1,7 @@
 // import 'package:elmanasa/helper/notification.dart';
 import 'package:elmanasa/helper/dashboard.dart';
 import 'package:elmanasa/view/screens/Home.dart';
+import 'package:elmanasa/view/screens/lesson.dart';
 // import 'package:elmanasa/view/screens/lesson.dart';
 // import 'package:elmanasa/view/screens/quiz.dart';
 
@@ -205,7 +206,7 @@ class _LessonHomeScreenState extends State<LessonHomeScreen>
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => LessonHomeScreen()),
+                                  builder: (context) => LessonPage()),
                             );
                           },
                           child: Padding(

@@ -1,6 +1,8 @@
 // import 'package:elmanasa/helper/notification.dart';
 import 'package:elmanasa/helper/dashboard.dart';
 import 'package:elmanasa/view/screens/lesson_home.dart';
+import 'package:elmanasa/view/screens/notification.dart';
+import 'package:elmanasa/view/screens/quiz_home.dart';
 // import 'package:elmanasa/view/screens/lesson.dart';
 // import 'package:elmanasa/view/screens/quiz.dart';
 
@@ -124,16 +126,20 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                         onPressed: _toggleDashboard,
                                       ),
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: 7),
-                                      child: CircleAvatar(
-                                        radius: 25,
-                                        backgroundImage: photoUrl != null &&
-                                                photoUrl!.isNotEmpty
-                                            ? AssetImage(photoUrl!)
-                                            : AssetImage('assets/images/me.jpg')
-                                                as ImageProvider,
-                                      ),
+                                    Row(
+                                      children: [ NotificationButton(),
+                                        Padding(
+                                          padding: const EdgeInsets.only(top: 7),
+                                          child: CircleAvatar(
+                                            radius: 25,
+                                            backgroundImage: photoUrl != null &&
+                                                    photoUrl!.isNotEmpty
+                                                ? AssetImage(photoUrl!)
+                                                : AssetImage('assets/images/me.jpg')
+                                                    as ImageProvider,
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ],
                                 ),
@@ -221,7 +227,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => HomeScreen()),
+                                    builder: (context) => QuizHomePage()),
                               );
                             },
                             child: Container(

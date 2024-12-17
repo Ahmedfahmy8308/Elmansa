@@ -9,6 +9,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 import 'package:permission_handler/permission_handler.dart';
+
 import 'package:http/http.dart' as http;
 import 'dart:convert'; // For JSON encoding/decoding
 import 'dart:io';
@@ -26,18 +27,16 @@ class _RegisterScreenState extends State<RegisterScreen> {
   final TextEditingController _mnameController = TextEditingController();
   final TextEditingController _lnameController = TextEditingController();
   final TextEditingController _birthController = TextEditingController();
-  //final TextEditingController _photoController = TextEditingController();
-
   final TextEditingController _phoneController = TextEditingController();
   final TextEditingController _parentphoneController = TextEditingController();
   final TextEditingController _ssnController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  final TextEditingController _confirmPasswordController =
-      TextEditingController();
+  final TextEditingController _confirmPasswordController = TextEditingController();
 
   bool _isObscured = true;
   File? _selectedImage;
   Uint8List? _image;
+
   Future<void> pickImage() async {
     PermissionStatus permissionStatus = await Permission.storage.request();
     if (permissionStatus.isGranted) {
@@ -49,56 +48,68 @@ class _RegisterScreenState extends State<RegisterScreen> {
           _image = _selectedImage!.readAsBytesSync();
         });
       } else {
+        print('Image selection cancelled or no image selected.');
         ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Please select an image'),
-          backgroundColor: Colors.red,
-        ),
-      );
+          SnackBar(content: Text('Please select an image')),
+        );
       }
     } else {
-      print('Access denied');
+      print('Storage permission denied.');
     }
   }
 
-Future<void> registerUser() async {
-  try {
-    // Create the MultipartFile instance only if an image is selected
-    MultipartFile? photo;
-    if (_selectedImage != null) {
-      photo = await MultipartFile.fromFile(
-        _selectedImage!.path,
-        filename: _selectedImage!.path.split('/').last, // Optional: specify filename
-      );
+  Future<void> registerUser() async {
+    if (_formRegisterKey.currentState!.validate()) {
+      try {
+        var request = http.MultipartRequest(
+          'POST',
+          Uri.parse("http://localhost/api/Account/Register"),
+        );
+
+        request.fields['Student_email'] = _emailController.text;
+        request.fields['Student_password'] = _passwordController.text;
+        request.fields['Student_first_name'] = _fnameController.text;
+        request.fields['Student_Middel_name'] = _mnameController.text;
+        request.fields['Student_last_name'] = _lnameController.text;
+        request.fields['Student_number'] = _phoneController.text;
+        request.fields['Student_SSN'] = _ssnController.text;
+        request.fields['Student_date_birth'] = _birthController.text;
+        request.fields['Student_guardian_number'] = _parentphoneController.text;
+
+        if (_selectedImage != null) {
+          print('Uploading image...');
+          var image = await http.MultipartFile.fromPath(
+            'Student_photo',
+            _selectedImage!.path,
+          );
+          request.files.add(image);
+        }
+
+        print('Sending request...');
+        var response = await request.send();
+
+        print('Response status: ${response.statusCode}');
+        if (response.statusCode == 200) {
+          print('Registration Successful');
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Registration Successful')),
+          );
+        } else {
+          print('Registration Failed: ${response.statusCode}');
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Registration Failed: ${response.statusCode}')),
+          );
+        }
+      } catch (e) {
+        print('Error during registration: ${e.toString()}');
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Registration Failed: ${e.toString()}')),
+        );
+      }
     }
-
-    final response = await Dio().post(
-      "http://localhost:5228/api/Account/Register",
-      data: {
-        "Student_email": _emailController.text,
-        "Student_password": _passwordController.text,
-        "Student_first_name": _fnameController.text,
-        "Student_Middel_name": _mnameController.text,
-        "Student_last_name": _lnameController.text,
-        "Student_number": _phoneController.text,
-        "Student_SSN": _ssnController.text,
-        "Student_date_birth": _birthController.text,
-        "Student_photo": photo,
-        "Student_guardian_number": _parentphoneController.text,
-      },
-    );
-
-    print(response.data);
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Registration Successful')),
-    );
-  } catch (e) {
-    print('Error: ${e.toString()}');
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Registration Failed: ${e.toString()}')),
-    );
   }
-}
+
+
 
   @override
   Widget build(BuildContext context) {
