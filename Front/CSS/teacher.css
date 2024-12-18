@@ -31,8 +31,8 @@
     border-radius: 10px;
     background: #ffffff;
     display: flex;
-    margin-left: 15%;
-    width: 75%;
+    margin-left: 11%;
+    width: 85%;
     margin-bottom: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -157,7 +157,7 @@
 }
 
 .quiz {
-    margin-bottom: 40px
+    margin-bottom: 80px
 }
 
 .add-quiz {
@@ -169,8 +169,8 @@
 }
 
 #quizList {
-    margin-left: 14%;
-    width: 77%;
+    margin-left: 11%;
+    width: 85%;
 }
 
 .toast-container {
@@ -183,5 +183,54 @@
 }
 
 .list-group-item {
+    margin-top: 10px;
+}
+
+
+.material-container {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+
+
+.card {
+    width: 85%;
+    margin-left: 11%;
+}
+
+.card label {
+    font-size: 18px;
+    color: #273c98dd;
+}
+
+
+#add {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 180px
+}
+
+
+#add {
+    background-color: #4c63c8ee;
+    color: white;
+}
+
+#add:hover {
+    background-color: #4c63c8de;
+    color: white;
+}
+
+#add:active {
+    background-color: #4c63c8de;
+    color: white;
+}
+
+.card h4 {
+    font-weight: bold;
     margin-top: 10px;
 }

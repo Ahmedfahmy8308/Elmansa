@@ -34,8 +34,8 @@
                 </h1>
                 <nav id="navbar" class="navbar">
                     <ul>
-                        <li><a class="nav-link scrollto active" href="#courses">Material</a></li>
-                        <li><a class="nav-link scrollto active" href="#quiz">Quizes</a></li>
+                        <li><a class="nav-link scrollto active" href="#material">Material</a></li>
+                        <li><a class="nav-link scrollto active" href="#quiz">Quizzes</a></li>
                         <li><a class="nav-link scrollto active" href="#active_student">Active Students</a></li>
                         <!--                         <li><a class="nav-link scrollto active" href="#contact">Contact</a></li>
                     -->
@@ -65,119 +65,192 @@
                 </div>
             </div>
         </div>
+
+
+
+        <!-- ***********************************  Add Material *******************************************-->
+        <div class="container" id="levels">
+            <div class="container mt-5" id="material">
+                <h2 class="text-center mb-4" data-aos-delay="200" data-aos="fade-down">Add Materials</h2>
+
+                <!-- Material Form -->
+                <div class="card p-4 shadow-sm" data-aos="fade-up" data-aos-delay="400">
+                    <form id="materialForm">
+                        <h4>Add Materials</h4>
+                        <!-- Lesson Name -->
+                        <div class="mb-3">
+                            <label for="lessonName" class="form-label fw-bold">Lesson Name</label>
+                            <input type="text" class="form-control" id="lessonName" placeholder="Enter lesson name"
+                                required>
+                        </div>
+
+                        <!-- Material Input Fields -->
+                        <div class="mb-3">
+                            <label for="materialTitle" class="form-label fw-bold">Material Title</label>
+                            <input type="text" class="form-control" id="materialTitle"
+                                placeholder="Enter material title" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="materialType" class="form-label fw-bold">Material Type</label>
+                            <select id="materialType" class="form-select" required>
+                                <option value="" disabled selected>Select material type</option>
+                                <option value="video">Video</option>
+                                <option value="pdf">PDF</option>
+                                <option value="link">Link</option>
+                            </select>
+                        </div>
+
+                        <!-- Dynamic Input for File or Link -->
+                        <div class="mb-3" id="dynamicInput">
+                            <input type="file" id="materialFile" class="form-control d-none" accept=".pdf,.mp4">
+                            <input type="text" id="materialLink" class="form-control d-none"
+                                placeholder="Enter the link">
+                        </div>
+
+                        <button type="button" class="btn btn-add-material mb-3" id="add" onclick="addMaterial()"
+                            style="font-size: 14px;">
+                            <i class="bi bi-plus-circle"></i> Add Material
+                        </button>
+
+                        <!-- Material List -->
+                        <h4>Uploaded Materials</h4>
+                        <div id="materialsList"></div>
+
+                        <!-- Publish Button -->
+                        <div class="text-end mt-3">
+                            <button type="button" class="btn" onclick="publishMaterials()" id="add">Publish
+                                Materials</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Success Notification -->
+            <div id="successAlert" class="alert alert-success position-fixed top-0 end-0 m-3 d-none" role="alert">
+                Materials published successfully!
+            </div>
+        </div>
+        <!-- ***********************************  Add Material *******************************************-->
+
+
         <!-- ***********************************  Add Quiz *******************************************-->
 
         <div class="container quiz" id="active_student">
             <div class="container mt-5 add-quiz" id="quiz">
-                <h2 class="text-center mb-4">Quiz Management</h2>
+                <h2 class="text-center mb-4" data-aos-delay="200" data-aos="fade-down">Quiz Management</h2>
                 <!-- Add New Quiz Button -->
-                <div class="text-center mb-3">
-                    <button class="btn" data-bs-toggle="modal" data-bs-target="#addQuizModal">
-                        <i class="bi bi-plus-circle"></i> Add New Quiz
-                    </button>
-                </div>
+                <div data-aos-delay="200" data-aos="fade-up">
+                    <div class="text-center mb-3">
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#addQuizModal">
+                            <i class="bi bi-plus-circle"></i> Add New Quiz
+                        </button>
+                    </div>
 
-                <!-- Quiz Modal -->
-                <div class="modal fade" id="addQuizModal" tabindex="-1" aria-labelledby="addQuizModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title" id="addQuizModalLabel">Add New Quiz</h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                                    style="background-color:rgba(255, 255, 255, 0.047);"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form id="quizForm">
-                                    <!-- Lesson and Duration -->
-                                    <div class="row mb-3">
-                                        <div class="col-md-6">
-                                            <label for="lessonInput" class="form-label">Lesson</label>
-                                            <input type="text" class="form-control" id="lessonInput"
-                                                placeholder="Enter lesson name" required>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="durationInput" class="form-label">Duration (in minutes)</label>
-                                            <input type="number" class="form-control" id="durationInput"
-                                                placeholder="Enter duration" required>
-                                        </div>
-                                    </div>
-
-                                    <!-- Questions Section -->
-                                    <h5>Questions</h5>
-                                    <div id="questionsContainer">
-                                        <!-- Default Question Block -->
-                                        <div class="question-block mb-4">
-                                            <label class="form-label">Question</label>
-                                            <input type="text" class="form-control mb-2 question-input"
-                                                placeholder="Enter question" required>
-
-                                            <div class="row">
-                                                <div class="col-md-6 mb-2">
-                                                    <input type="text" class="form-control choice-input"
-                                                        placeholder="Choice A" required>
-                                                </div>
-                                                <div class="col-md-6 mb-2">
-                                                    <input type="text" class="form-control choice-input"
-                                                        placeholder="Choice B" required>
-                                                </div>
-                                                <div class="col-md-6 mb-2">
-                                                    <input type="text" class="form-control choice-input"
-                                                        placeholder="Choice C" required>
-                                                </div>
-                                                <div class="col-md-6 mb-2">
-                                                    <input type="text" class="form-control choice-input"
-                                                        placeholder="Choice D" required>
-                                                </div>
+                    <!-- Quiz Modal -->
+                    <div class="modal fade" id="addQuizModal" tabindex="-1" aria-labelledby="addQuizModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="addQuizModalLabel">Add New Quiz</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                        style="background-color:rgba(255, 255, 255, 0.047);"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="quizForm">
+                                        <!-- Lesson and Duration -->
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <label for="lessonInput" class="form-label">Lesson</label>
+                                                <input type="text" class="form-control" id="lessonInput"
+                                                    placeholder="Enter lesson name" required>
                                             </div>
-
-                                            <label class="form-label">Correct Answer</label>
-                                            <select class="form-select correct-answer-input" required>
-                                                <option value="" disabled selected style="">Select the correct answer
-                                                </option>
-                                                <option value="A">A</option>
-                                                <option value="B">B</option>
-                                                <option value="C">C</option>
-                                                <option value="D">D</option>
-                                            </select>
-                                            <hr>
+                                            <div class="col-md-6">
+                                                <label for="durationInput" class="form-label">Duration (in
+                                                    minutes)</label>
+                                                <input type="number" class="form-control" id="durationInput"
+                                                    placeholder="Enter duration" required>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <!-- Add New Question Button -->
-                                    <button type="button" class="btn btn-info btn-sm mb-3 add_new"
-                                        onclick="addNewQuestion()">
-                                        <i class="bi bi-plus-circle"></i> Add Another Question
-                                    </button>
+                                        <!-- Questions Section -->
+                                        <h5>Questions</h5>
+                                        <div id="questionsContainer">
+                                            <!-- Default Question Block -->
+                                            <div class="question-block mb-4">
+                                                <label class="form-label">Question</label>
+                                                <input type="text" class="form-control mb-2 question-input"
+                                                    placeholder="Enter question" required>
 
-                                    <!-- Submit Button -->
-                                    <div class="text-end">
-                                        <button type="submit" class="btn btn-success">Save Quiz</button>
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-                                    </div>
-                                </form>
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-2">
+                                                        <input type="text" class="form-control choice-input"
+                                                            placeholder="Choice A" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2">
+                                                        <input type="text" class="form-control choice-input"
+                                                            placeholder="Choice B" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2">
+                                                        <input type="text" class="form-control choice-input"
+                                                            placeholder="Choice C" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-2">
+                                                        <input type="text" class="form-control choice-input"
+                                                            placeholder="Choice D" required>
+                                                    </div>
+                                                </div>
+
+                                                <label class="form-label">Correct Answer</label>
+                                                <select class="form-select correct-answer-input" required>
+                                                    <option value="" disabled selected>Select the correct answer
+                                                    </option>
+                                                    <option value="A">A</option>
+                                                    <option value="B">B</option>
+                                                    <option value="C">C</option>
+                                                    <option value="D">D</option>
+                                                </select>
+                                                <hr>
+                                            </div>
+                                        </div>
+
+                                        <!-- Add New Question Button -->
+                                        <button type="button" class="btn btn-info btn-sm mb-3 add_new"
+                                            onclick="addNewQuestion()">
+                                            <i class="bi bi-plus-circle"></i> Add Another Question
+                                        </button>
+
+                                        <!-- Submit Button -->
+                                        <div class="text-end">
+                                            <button type="submit" class="btn btn-success">Save Quiz</button>
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Placeholder to Display Quiz Data -->
-                <div id="quizList" class="mt-4">
-                    <h3>Quizzes</h3>
-                    <ul class="list-group" id="quizDisplay"></ul>
-                </div>
-            </div>
+                    <!-- Placeholder to Display Quiz Data -->
+                    <div id="quizList" class="mt-4">
+                        <h3>Quizzes</h3>
+                        <ul class="list-group" id="quizDisplay"></ul>
+                    </div>
 
-            <div class="toast-container">
-                <div id="quizToast" class="toast align-items-center text-bg-success border-0" role="alert"
-                    aria-live="assertive" aria-atomic="true">
-                    <div class="d-flex">
-                        <div class="toast-body">
-                            Quiz has been successfully published!
+                    <div class="toast-container">
+                        <div id="quizToast"
+                            class="toast align-items-center text-bg-success border-0 position-fixed top-0 end-0 m-3"
+                            role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="d-flex">
+                                <div class="toast-body">
+                                    Quiz has been successfully published!
+                                </div>
+                                <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                                    data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
                         </div>
-                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-                            aria-label="Close"></button>
                     </div>
                 </div>
             </div>
@@ -189,13 +262,13 @@
 
         <!--  Active students   -->
         <div class="container align-items-center" id="active_student">
-            <h2>Active Students</h2>
+            <h2 data-aos-delay="200" data-aos="fade-up">Active Students</h2>
             <div class="search-bar" data-aos="fade-down" data-aos-delay=" 100">
                 <input type="text" id="searchInput" placeholder="Search here...">
                 <i class="bi bi-search"></i>
             </div>
 
-            <div class="row g-3">
+            <div class="row g-3" data-aos-delay="200" data-aos="fade-down">
                 <!-- Student 1 -->
                 <div class="col-md-12">
                     <div class="student-card d-flex align-items-center p-3">
@@ -225,7 +298,7 @@
                 </div>
             </div>
 
-            <div class="row g-3">
+            <div class="row g-3" data-aos-delay="200" data-aos="fade-down">
                 <!-- Student 2 -->
                 <div class="col-md-12">
                     <div class="student-card d-flex align-items-center p-3">
@@ -256,7 +329,7 @@
                 </div>
             </div>
 
-            <div class="row g-3">
+            <div class="row g-3" data-aos-delay="200" data-aos="fade-down">
                 <!-- Student 2 -->
                 <div class="col-md-12">
                     <div class="student-card d-flex align-items-center p-3">
@@ -285,7 +358,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row g-3">
+
+            <div class="row g-3" data-aos-delay="200" data-aos="fade-down">
                 <!-- Student 2 -->
                 <div class="col-md-12">
                     <div class="student-card d-flex align-items-center p-3">
@@ -326,7 +400,9 @@
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/js/script.js"></script>
-    <script> function editDetails(button) {
+    <script src="assets/js/teacher.js"></script>
+    <script>
+        function editDetails(button) {
             const card = button.closest('.student-card');
             const name = card.querySelector('.student-name');
             const email = card.querySelector('.student-email');
@@ -401,36 +477,36 @@
         function addNewQuestion() {
             const questionsContainer = document.getElementById('questionsContainer');
             const questionHTML = `
-                <div class="question-block mb-4">
-                    <label class="form-label">Question</label>
-                    <input type="text" class="form-control mb-2 question-input" placeholder="Enter question" required>
+    <div class="question-block mb-4">
+        <label class="form-label">Question</label>
+        <input type="text" class="form-control mb-2 question-input" placeholder="Enter question" required>
 
-                    <div class="row">
-                        <div class="col-md-6 mb-2">
-                            <input type="text" class="form-control choice-input" placeholder="Choice A" required>
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <input type="text" class="form-control choice-input" placeholder="Choice B" required>
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <input type="text" class="form-control choice-input" placeholder="Choice C" required>
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <input type="text" class="form-control choice-input" placeholder="Choice D" required>
-                        </div>
-                    </div>
+        <div class="row">
+            <div class="col-md-6 mb-2">
+                <input type="text" class="form-control choice-input" placeholder="Choice A" required>
+            </div>
+            <div class="col-md-6 mb-2">
+                <input type="text" class="form-control choice-input" placeholder="Choice B" required>
+            </div>
+            <div class="col-md-6 mb-2">
+                <input type="text" class="form-control choice-input" placeholder="Choice C" required>
+            </div>
+            <div class="col-md-6 mb-2">
+                <input type="text" class="form-control choice-input" placeholder="Choice D" required>
+            </div>
+        </div>
 
-                    <label class="form-label">Correct Answer</label>
-                    <select class="form-select correct-answer-input" required>
-                        <option value="" disabled selected>Select the correct answer</option>
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="C">C</option>
-                        <option value="D">D</option>
-                    </select>
-                    <hr>
-                </div>
-            `;
+        <label class="form-label">Correct Answer</label>
+        <select class="form-select correct-answer-input" required>
+            <option value="" disabled selected>Select the correct answer</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+        <hr>
+    </div>
+    `;
             questionsContainer.insertAdjacentHTML('beforeend', questionHTML);
         }
 
@@ -459,19 +535,19 @@
             // Display Quiz Data
             const quizDisplay = document.getElementById('quizDisplay');
             let quizHTML = `
-                <li class="list-group-item">
-                    <strong>Lesson:</strong> ${lesson} | <strong>Duration:</strong> ${duration} minutes <br>
-                    <strong>Questions:</strong>
-                    <ul>
+    <li class="list-group-item">
+        <strong>Lesson:</strong> ${lesson} | <strong>Duration:</strong> ${duration} minutes <br>
+        <strong>Questions:</strong>
+        <ul>
             `;
             questions.forEach((q, index) => {
                 quizHTML += `
-                    <li>
-                        Q${index + 1}: ${q.question} <br>
-                        Choices: A) ${q.choices[0]}, B) ${q.choices[1]}, C) ${q.choices[2]}, D) ${q.choices[3]} <br>
-                        Correct Answer: ${q.correctAnswer}
-                    </li>
-                `;
+            <li>
+                Q${index + 1}: ${q.question} <br>
+                Choices: A) ${q.choices[0]}, B) ${q.choices[1]}, C) ${q.choices[2]}, D) ${q.choices[3]} <br>
+                Correct Answer: ${q.correctAnswer}
+            </li>
+            `;
             });
             quizHTML += '</ul></li>';
 
