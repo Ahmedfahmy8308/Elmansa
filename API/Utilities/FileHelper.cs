@@ -4,17 +4,40 @@ using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
 using System;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace API.Utilities
 {
     public class FileHelper
     {
-        private static readonly int MaxWidth = 800; 
-        private static readonly int MaxHeight = 800; 
+        private static FileHelper _instance; 
+        private static readonly object _lock = new object();
 
-        public static async Task<string> SaveStudentPhoto(IFormFile studentPhoto, string filePath)
+        private static readonly int MaxWidth = 800;
+        private static readonly int MaxHeight = 800;
+
+        private FileHelper() { }
+
+        public static FileHelper Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    lock (_lock) 
+                    {
+                        if (_instance == null) 
+                        {
+                            _instance = new FileHelper();
+                        }
+                    }
+                }
+
+                return _instance;
+            }
+        }
+
+        public async Task<string> SaveStudentPhoto(IFormFile studentPhoto, string filePath)
         {
             try
             {
@@ -39,7 +62,7 @@ namespace API.Utilities
                         image.Mutate(x => x.Resize(width, height));
                     }
 
-                    await image.SaveAsync(filePath); 
+                    await image.SaveAsync(filePath);
                 }
 
                 return filePath;

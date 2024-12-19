@@ -13,6 +13,7 @@ namespace API.Utilities
 
     public static class PathGenerator
     {
+        
       
         public static PathResult GenerateStudentImagePath(string filename, string userid)
         {

@@ -21,6 +21,7 @@ namespace API.Controllers.StudentControllers
         private readonly IUnitOfWork _unitOfWork;
         private readonly IConfiguration _config;
 
+        private FileHelper FileHelper = FileHelper.Instance;
         public AccountController(
             UserManager<AppUser> userManager,
             SignInManager<AppUser> signInManager,
@@ -68,11 +69,18 @@ namespace API.Controllers.StudentControllers
             var StudentFactory = FactoryProvider.GetFactory<Student>();
             var student = StudentFactory.CreateEntity(new object[] { register, allowedStudent, filePaths.RelativePath, userid });
 
+
             _unitOfWork.Students.AddAsync(student);
 
             var result = await _userManager.CreateAsync(user, register.Student_password);
+
             if (!result.Succeeded)
                 return BadRequest(result.Errors.Select(e => e.Description));
+
+            var roleResult = await _userManager.AddToRoleAsync(user, "Student");
+
+            if (!roleResult.Succeeded)
+                return BadRequest(roleResult.Errors.Select(e => e.Description));
 
             _unitOfWork.CompleteAsync();
 
