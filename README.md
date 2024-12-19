@@ -16,7 +16,8 @@ Some features are being designed, while others are in the testing phase.
 - **Mobile Screens**: Screenshots of the app’s mobile version.  
 - **Front**: Teacher updates and frontend components (HTML, Bootstrap, jQuery).  
 - **Mobile**: Mobile app being developed with **Flutter**.  
-- **SQL**: Database scripts using **SQL Server**.  
+- **SQL**: Database scripts using **SQL Server**.
+-  **Documentation**: The Documentation file of  **Elmanassa**.  
 - **req.txt**: Project requirements and dependencies.  
 
 ---
