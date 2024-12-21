@@ -50,7 +50,7 @@ namespace API
             builder.Services.AddSwaggerGen();
 
             var context = builder.Services.BuildServiceProvider().GetService<AppDbContext>();
-            //context.Database.EnsureCreated();
+            context.Database.EnsureCreated();
 
             //context.Database.Migrate();
             //context.Database.EnsureDeleted();

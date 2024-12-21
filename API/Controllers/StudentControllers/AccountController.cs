@@ -89,7 +89,7 @@ namespace API.Controllers.StudentControllers
 
 
         [HttpPost("LogIn")]
-        public async Task<IActionResult> LogIn([FromBody] LogIn_dto login)
+        public async Task<IActionResult> LogIn([FromBody] LogIn_Student_dto login)
         {
             var user = await _userManager.FindByEmailAsync(login.Student_email);
 

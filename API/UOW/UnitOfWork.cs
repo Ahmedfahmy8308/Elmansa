@@ -15,11 +15,14 @@ namespace API.UOW
 
         public IRepository<AllowedStudent> AllowedStudents { get; }
 
+        public IRepository<Group> Groups { get; }
+
         public UnitOfWork( AppDbContext context )
         {
             _context = context;
             Students = new StudentRepository(_context);
             AllowedStudents = new GenericRepository<AllowedStudent>(_context);
+            Groups = new GenericRepository<Group>(_context);
         }
 
         public async Task<int> CompleteAsync()
