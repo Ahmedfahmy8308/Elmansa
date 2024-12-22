@@ -8,7 +8,7 @@ namespace API.Entities;
 public class QuizQuestion
 {
     public int ID { get; set; }
-    public int QuizId { get; set; }
+    public string QuizId { get; set; } = null!;
     public string Text { get; set; } = null!;
     public string CorrectAnswer { get; set; } = null!;
 

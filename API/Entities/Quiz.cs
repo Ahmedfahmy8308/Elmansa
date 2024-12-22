@@ -8,7 +8,7 @@ namespace API.Entities;
 
 public class Quiz
 {
-    public int ID { get; set; }
+    public string ID { get; set; } = null!;
     public string Title { get; set; } = null!;
     public string Description { get; set; } = null!;
     public DateTime CreationDate { get; set; }
@@ -19,7 +19,6 @@ public class Quiz
 
     public int? GroupId { get; set; }
 
-    public ICollection<GroupQuiz> Groups { get; set; }
     public ICollection<QuizQuestion>? QuizQuestions { get; set; }
     public ICollection<QuizSubmission>? QuizSubmissions { get; set; }
 }

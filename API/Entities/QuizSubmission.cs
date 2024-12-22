@@ -8,9 +8,9 @@ namespace API.Entities;
 
 public class QuizSubmission
 {
-    public int ID { get; set; }
+    public string ID { get; set; } = null!;
     public string StudentID { get; set; } = null!;
-    public int QuizID { get; set; }
+    public string QuizID { get; set; } = null!;
     public double? Score { get; set; }
     public DateTime SubmissionDate { get; set; }
     public string Answers { get; set; } = null!;

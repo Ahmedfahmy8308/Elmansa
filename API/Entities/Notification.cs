@@ -8,7 +8,7 @@ namespace API.Entities;
 
 public class Notification
 {
-    public int ID { get; set; }
+    public string ID { get; set; } = null!;
     public string Title { get; set; } = null!;
     public string NotificationContent { get; set; } = null!;
     public DateTime CreationDate { get; set; }

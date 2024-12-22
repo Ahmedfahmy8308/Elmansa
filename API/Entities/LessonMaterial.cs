@@ -8,8 +8,8 @@ namespace API.Entities;
 
 public class LessonMaterial
 {
-    public int LessonID { get; set; }
-    public int MaterialID { get; set; }
+    public string LessonID { get; set; } = null!;
+    public string MaterialID { get; set; } = null!;
 
     public Lesson Lesson { get; set; } = null!;
     public Material Material { get; set; } = null!;

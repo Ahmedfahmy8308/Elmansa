@@ -8,9 +8,9 @@ namespace API.Entities;
 
 public class AssignmentSubmission
 {
-    public int ID { get; set; }
+    public string ID { get; set; } = null!;
     public string StudentID { get; set; } = null!;
-    public int AssignmentID { get; set; }
+    public string AssignmentID { get; set; } = null!;
     public string FilePath { get; set; } = null!;
     public DateTime SubmissionDate { get; set; }
 

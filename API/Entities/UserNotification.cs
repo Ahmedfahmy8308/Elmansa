@@ -7,8 +7,8 @@ using Microsoft.EntityFrameworkCore;
 namespace API.Entities;
 public class UserNotification
 {
-    public int ID { get; set; }
-    public int NotificationId { get; set; }
+    public string ID { get; set; } = null!;
+    public string NotificationId { get; set; } = null!;
     public string StudentID { get; set; } = null!;
     public bool IsRead { get; set; }
     public DateTime? ReadAt { get; set; }

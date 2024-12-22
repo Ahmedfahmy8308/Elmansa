@@ -9,7 +9,7 @@ namespace API.Entities;
 public class QuizOption
 {
     public int ID { get; set; }
-    public int QuestionId { get; set; }
+    public int QuestionId { get; set;}
     public string OptionText { get; set; } = null!;
     public bool IsCorrect { get; set; }
 

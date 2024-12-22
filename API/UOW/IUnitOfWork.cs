@@ -1,5 +1,4 @@
-﻿using API.Data;
-using API.Data.Repositories;
+﻿using API.Data.Repositories;
 using API.Entities;
 using API.Repositories;
 using Microsoft.AspNetCore.Identity;
@@ -13,6 +12,8 @@ namespace API.UOW
         IStudentRepository Students { get; }
         IRepository<AllowedStudent> AllowedStudents { get; }
         IRepository<Group> Groups { get; }
+        IRepository<Material> Materials { get; }
+        IRepository<Lesson> Lessons { get; }
 
         Task<int> CompleteAsync();
     }

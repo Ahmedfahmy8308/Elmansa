@@ -8,7 +8,7 @@ namespace API.Entities;
 
 public class Material
 {
-    public int ID { get; set; }
+    public string ID { get; set; } = null!;
     public string Title { get; set; } = null!;
     public string Type { get; set; } = null!;
     public string FilePath { get; set; } = null!;

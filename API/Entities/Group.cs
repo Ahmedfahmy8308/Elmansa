@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace API.Entities;
 public class Group
 {
-    public int ID { get; set; }
+    public int ID { get; set; } 
 
     public string Name { get; set; } = null!;
 
@@ -23,7 +23,6 @@ public class Group
     public ICollection<Lesson>? Lessons { get; set; }
     public ICollection<Student>? Students { get; set; }
     public ICollection<AllowedStudent>? AllowedStudents { get; set; }
-    public ICollection<GroupQuiz>? Quizzes { get; set; }
     public ICollection<Notification>? Notifications { get; set; }
 
 }

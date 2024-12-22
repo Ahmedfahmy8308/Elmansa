@@ -8,13 +8,13 @@ namespace API.Entities;
 
 public class Assignment
 {
-    public int ID { get; set; }
+    public string ID { get; set; } = null!;
     public string Title { get; set; } =null!;
     public string Description { get; set; } = null!;
     public string? FilePath { get; set; }
     public DateTime StartDate { get; set; }
     public DateTime EndDate { get; set; }
-    public int LessonID { get; set; }
+    public string LessonID { get; set; } = null!;
 
 
     public Lesson Lesson { get; set; } = null!;

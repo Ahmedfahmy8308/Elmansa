@@ -17,7 +17,7 @@ namespace API.Utilities
       
         public static PathResult GenerateStudentImagePath(string filename, string userid)
         {
-            string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "StudentPhotos");
+            string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "uploads", "StudentPhotos");
 
             Directory.CreateDirectory(uploadsFolder);
 

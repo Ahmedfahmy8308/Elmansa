@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace API.Migrations
 {
     /// <inheritdoc />
-    public partial class iniateMyDb : Migration
+    public partial class initiate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -71,8 +71,7 @@ namespace API.Migrations
                 name: "Materials",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Type = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     FilePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -87,8 +86,7 @@ namespace API.Migrations
                 name: "Quizs",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -233,22 +231,21 @@ namespace API.Migrations
                 name: "Lessons",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     QRCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     StartDateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     EndDateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    GroubId = table.Column<int>(type: "int", nullable: false),
+                    GroupId = table.Column<int>(type: "int", nullable: false),
                     IsAttendanceAllow = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Lessons", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Lessons_Groups_GroubId",
-                        column: x => x.GroubId,
+                        name: "FK_Lessons_Groups_GroupId",
+                        column: x => x.GroupId,
                         principalTable: "Groups",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
@@ -258,8 +255,7 @@ namespace API.Migrations
                 name: "Notifications",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     NotificationContent = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -282,20 +278,20 @@ namespace API.Migrations
                 columns: table => new
                 {
                     GroupID = table.Column<int>(type: "int", nullable: false),
-                    QuizID = table.Column<int>(type: "int", nullable: false)
+                    QuizID = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_GroupQuizs", x => new { x.GroupID, x.QuizID });
                     table.ForeignKey(
-                        name: "FK_GroupQuizs_Groups_QuizID",
-                        column: x => x.QuizID,
+                        name: "FK_GroupQuizs_Groups_GroupID",
+                        column: x => x.GroupID,
                         principalTable: "Groups",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_GroupQuizs_Quizs_GroupID",
-                        column: x => x.GroupID,
+                        name: "FK_GroupQuizs_Quizs_QuizID",
+                        column: x => x.QuizID,
                         principalTable: "Quizs",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
@@ -307,7 +303,7 @@ namespace API.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    QuizId = table.Column<int>(type: "int", nullable: false),
+                    QuizId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Text = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CorrectAnswer = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
@@ -366,14 +362,13 @@ namespace API.Migrations
                 name: "Assignments",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     FilePath = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    LessonID = table.Column<int>(type: "int", nullable: false)
+                    LessonID = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -390,8 +385,8 @@ namespace API.Migrations
                 name: "LessonMaterials",
                 columns: table => new
                 {
-                    LessonID = table.Column<int>(type: "int", nullable: false),
-                    MaterialID = table.Column<int>(type: "int", nullable: false)
+                    LessonID = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    MaterialID = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -435,10 +430,9 @@ namespace API.Migrations
                 name: "Attendances",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     StudentId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    LessonId = table.Column<int>(type: "int", nullable: false)
+                    LessonId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -461,10 +455,9 @@ namespace API.Migrations
                 name: "QuizSubmissions",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     StudentID = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    QuizID = table.Column<int>(type: "int", nullable: false),
+                    QuizID = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Score = table.Column<double>(type: "float", nullable: true),
                     SubmissionDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Answers = table.Column<string>(type: "nvarchar(max)", nullable: false)
@@ -490,9 +483,8 @@ namespace API.Migrations
                 name: "UserNotifications",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    NotificationId = table.Column<int>(type: "int", nullable: false),
+                    ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    NotificationId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     StudentID = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     IsRead = table.Column<bool>(type: "bit", nullable: false, defaultValue: false),
                     ReadAt = table.Column<DateTime>(type: "datetime2", nullable: true)
@@ -518,10 +510,9 @@ namespace API.Migrations
                 name: "AssignmentSubmissions",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ID = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     StudentID = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    AssignmentID = table.Column<int>(type: "int", nullable: false),
+                    AssignmentID = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     FilePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     SubmissionDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -622,9 +613,9 @@ namespace API.Migrations
                 column: "MaterialID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Lessons_GroubId",
+                name: "IX_Lessons_GroupId",
                 table: "Lessons",
-                column: "GroubId");
+                column: "GroupId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Notifications_GroupId",

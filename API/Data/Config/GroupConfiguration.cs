@@ -41,10 +41,10 @@ public class GroupConfiguration : IEntityTypeConfiguration<Group>
                .HasForeignKey(a => a.GroupID)
                .OnDelete(DeleteBehavior.SetNull);
 
-        builder.HasMany(g => g.Quizzes)
-               .WithOne(q => q.Group)
-               .HasForeignKey(q => q.QuizID)
-               .OnDelete(DeleteBehavior.Cascade);
+        //builder.HasMany(g => g.Quizzes)
+        //       .WithOne(q => q.Group)
+        //       .HasForeignKey(q => q.QuizID)
+        //       .OnDelete(DeleteBehavior.Cascade);
 
         builder.HasMany(g => g.Notifications)
                .WithOne(n => n.Group)

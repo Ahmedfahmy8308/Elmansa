@@ -37,6 +37,7 @@ namespace API.Utilities
             }
         }
 
+
         public async Task<string> SaveStudentPhoto(IFormFile studentPhoto, string filePath)
         {
             try
@@ -72,5 +73,22 @@ namespace API.Utilities
                 throw new InvalidOperationException("Error while saving student photo: " + ex.Message);
             }
         }
+    
+        public async Task<IFormFile> loadFile(string filePath)
+        {
+
+            if (File.Exists(filePath))
+            {
+                var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+                var formFile = new FormFile(stream, 0, stream.Length, null, Path.GetFileName(filePath))
+                {
+                    Headers = new HeaderDictionary(),
+                    ContentType = "application/octet-stream"
+                };
+                return formFile;
+            }
+            return null;
+        }
+
     }
 }

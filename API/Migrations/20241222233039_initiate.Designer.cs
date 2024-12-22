@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241209185406_iniateMyDb")]
-    partial class iniateMyDb
+    [Migration("20241222233039_initiate")]
+    partial class initiate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -121,11 +121,9 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Entities.Assignment", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<string>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -137,8 +135,9 @@ namespace API.Migrations
                     b.Property<string>("FilePath")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("LessonID")
-                        .HasColumnType("int");
+                    b.Property<string>("LessonID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
@@ -157,14 +156,13 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Entities.AssignmentSubmission", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<string>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(450)");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<int>("AssignmentID")
-                        .HasColumnType("int");
+                    b.Property<string>("AssignmentID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("FilePath")
                         .IsRequired()
@@ -188,14 +186,13 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Entities.Attendance", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<string>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(450)");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<int>("LessonId")
-                        .HasColumnType("int");
+                    b.Property<string>("LessonId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("StudentId")
                         .IsRequired()
@@ -249,8 +246,8 @@ namespace API.Migrations
                     b.Property<int>("GroupID")
                         .HasColumnType("int");
 
-                    b.Property<int>("QuizID")
-                        .HasColumnType("int");
+                    b.Property<string>("QuizID")
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("GroupID", "QuizID");
 
@@ -261,11 +258,9 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Entities.Lesson", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<string>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -274,7 +269,7 @@ namespace API.Migrations
                     b.Property<DateTime>("EndDateTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("GroubId")
+                    b.Property<int>("GroupId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsAttendanceAllow")
@@ -294,18 +289,18 @@ namespace API.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("GroubId");
+                    b.HasIndex("GroupId");
 
                     b.ToTable("Lessons");
                 });
 
             modelBuilder.Entity("API.Entities.LessonMaterial", b =>
                 {
-                    b.Property<int>("LessonID")
-                        .HasColumnType("int");
+                    b.Property<string>("LessonID")
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("MaterialID")
-                        .HasColumnType("int");
+                    b.Property<string>("MaterialID")
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("LessonID", "MaterialID");
 
@@ -316,11 +311,9 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Entities.Material", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<string>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("FilePath")
                         .IsRequired()
@@ -346,11 +339,9 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Entities.Notification", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<string>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
@@ -381,11 +372,9 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Entities.Quiz", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<string>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime2");
@@ -457,8 +446,9 @@ namespace API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("QuizId")
-                        .HasColumnType("int");
+                    b.Property<string>("QuizId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Text")
                         .IsRequired()
@@ -473,18 +463,17 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Entities.QuizSubmission", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<string>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Answers")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("QuizID")
-                        .HasColumnType("int");
+                    b.Property<string>("QuizID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<double?>("Score")
                         .HasColumnType("float");
@@ -592,19 +581,18 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Entities.UserNotification", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<string>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<bool>("IsRead")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
                         .HasDefaultValue(false);
 
-                    b.Property<int>("NotificationId")
-                        .HasColumnType("int");
+                    b.Property<string>("NotificationId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime?>("ReadAt")
                         .HasColumnType("datetime2");
@@ -816,14 +804,14 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Entities.GroupQuiz", b =>
                 {
-                    b.HasOne("API.Entities.Quiz", "Quiz")
-                        .WithMany("Groups")
+                    b.HasOne("API.Entities.Group", "Group")
+                        .WithMany()
                         .HasForeignKey("GroupID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("API.Entities.Group", "Group")
-                        .WithMany("Quizzes")
+                    b.HasOne("API.Entities.Quiz", "Quiz")
+                        .WithMany()
                         .HasForeignKey("QuizID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -837,7 +825,7 @@ namespace API.Migrations
                 {
                     b.HasOne("API.Entities.Group", "Group")
                         .WithMany("Lessons")
-                        .HasForeignKey("GroubId")
+                        .HasForeignKey("GroupId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -1020,8 +1008,6 @@ namespace API.Migrations
 
                     b.Navigation("Notifications");
 
-                    b.Navigation("Quizzes");
-
                     b.Navigation("Students");
                 });
 
@@ -1046,8 +1032,6 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Entities.Quiz", b =>
                 {
-                    b.Navigation("Groups");
-
                     b.Navigation("QuizQuestions");
 
                     b.Navigation("QuizSubmissions");

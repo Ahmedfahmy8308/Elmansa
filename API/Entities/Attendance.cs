@@ -7,9 +7,9 @@ using Microsoft.EntityFrameworkCore;
 namespace API.Entities;
 public class Attendance
 {
-    public int ID { get; set; }
+    public string ID { get; set; } = null!;
     public string StudentId { get; set; } = null!;
-    public int LessonId { get; set; }
+    public string LessonId { get; set; } = null!;
 
     public Student Student { get; set; } = null!;
     public Lesson Lesson { get; set; } = null!;

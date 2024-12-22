@@ -8,13 +8,13 @@ namespace API.Entities;
 
 public class Lesson
 {
-    public int ID { get; set; }
+    public string ID { get; set; } = null!;
     public string Title { get; set; } = null!;
     public string Description { get; set; } = null!;
     public string QRCode { get; set; } = null!;
     public DateTime StartDateTime { get; set; }
     public DateTime EndDateTime { get; set; }
-    public int GroubId { get; set; }
+    public int GroupId { get; set; }
 
     public bool IsAttendanceAllow { get; set; }
 

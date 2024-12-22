@@ -13,15 +13,15 @@ namespace API.Data.Config
 
 
             // Relationships
-            builder.HasOne(x => x.Group)
-                   .WithMany(l => l.Quizzes)
-                   .HasForeignKey(x => x.GroupID)
-                   .OnDelete(DeleteBehavior.Cascade);
+            //builder.HasOne(x => x.Group)
+            //       .WithMany(l => l.Quizzes)
+            //       .HasForeignKey(x => x.GroupID)
+            //       .OnDelete(DeleteBehavior.Cascade);
 
-            builder.HasOne(x => x.Quiz)
-                   .WithMany(m => m.Groups)
-                   .HasForeignKey(x => x.QuizID)
-                   .OnDelete(DeleteBehavior.Cascade);
+            //builder.HasOne(x => x.Quiz)
+            //       .WithMany(m => m.Groups)
+            //       .HasForeignKey(x => x.QuizID)
+            //       .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

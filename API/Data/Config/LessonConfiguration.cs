@@ -37,7 +37,7 @@ namespace API.Data.Config
 
             builder.HasOne(x => x.Group)
                    .WithMany(g => g.Lessons)
-                   .HasForeignKey(x => x.GroubId)
+                   .HasForeignKey(x => x.GroupId)
                    .OnDelete(DeleteBehavior.Cascade);
         }
     }
