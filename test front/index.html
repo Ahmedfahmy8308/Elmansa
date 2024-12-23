@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2 id="lesson-title"></h2>
+        <p id="lesson-description"></p>
+        <p><strong>Created At:</strong> <span id="lesson-created-at"></span></p>
+        <img id="lesson-qr-code" src="" alt="QR Code will be displayed here" />
+      </div>
+      
+</body>
+
+<script>
+    var lessonId = 1516586976;
+    const api = `http://localhost:5228`;
+    const apiUrl = `${api}/api/Lesson/${lessonId}`;
+    
+    fetch(apiUrl)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch lesson details.");
+        }
+        return response.json();
+      })
+      .then((lesson) => {
+        console.log("Lesson Details:", lesson);
+    
+        // Display lesson details
+        document.getElementById("lesson-title").textContent = lesson.title || "No title available.";
+        document.getElementById("lesson-description").textContent = lesson.description || "No description available.";
+        document.getElementById("lesson-created-at").textContent = lesson.createdAt || "Unknown date.";
+    
+        // Display QR Code
+        const qrCodeImg = document.getElementById("lesson-qr-code");
+        const qrcodeurl = `${api}${lesson.qrCodeimage}`;
+        if (lesson.qrCodeimage) {
+          qrCodeImg.src = qrcodeurl;
+          qrCodeImg.alt = `QR Code for Lesson ${lesson.title}`;
+        } else {
+          qrCodeImg.alt = "QR Code not available.";
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching lesson details:", error);
+      });
+
+</script>
+</html>
+  

@@ -66,6 +66,7 @@ namespace API
                 app.UseSwaggerUI();
             }
             app.UseStaticFiles();
+            app.UseCors("MyPolicy");
             app.UseAuthorization();
 
 

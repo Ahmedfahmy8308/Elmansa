@@ -12,7 +12,7 @@ public class Lesson
     public string Title { get; set; } = null!;
     public string Description { get; set; } = null!;
     public string QRCode { get; set; } = null!;
-    public DateTime StartDateTime { get; set; }
+    public DateTime StartDateTime { get; set; } 
     public DateTime EndDateTime { get; set; }
     public int GroupId { get; set; }
 

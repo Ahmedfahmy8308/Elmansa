@@ -14,7 +14,7 @@ namespace API.Utilities
         /// <param name="content">The content to encode in the QR code.</param>
         /// <param name="outputDirectory">The directory to save the QR code image.</param>
         /// <returns>The file path of the saved QR code image.</returns>
-        public static string GenerateQrCode(string content, string outputDirectory , string lessonid)
+        public static string GenerateQrCode(string content, string outputDirectory , string fn)
         {
             if (string.IsNullOrWhiteSpace(content))
                 throw new ArgumentException("Content cannot be null or empty.", nameof(content));
@@ -26,7 +26,7 @@ namespace API.Utilities
             Directory.CreateDirectory(outputDirectory);
 
             // Generate a unique file name for the QR code
-            string fileName = $"QRCode_{lessonid}.png";
+            string fileName = $"QRCode_{fn}.png";
             string filePath = Path.Combine(outputDirectory, fileName);
 
             using (QRCodeGenerator qrGenerator = new QRCodeGenerator())
