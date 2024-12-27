@@ -17,7 +17,7 @@ namespace API.UOW
 
         public IRepository<Group> Groups { get; }
 
-        public IRepository<Material> Materials { get; }
+        public IMaterialRepository Materials { get; }
         public IRepository<Lesson> Lessons { get; }
 
         public UnitOfWork( AppDbContext context )
@@ -26,7 +26,7 @@ namespace API.UOW
             Students = new StudentRepository(_context);
             AllowedStudents = new GenericRepository<AllowedStudent>(_context);
             Groups = new GenericRepository<Group>(_context);
-            Materials = new GenericRepository<Material>(_context);
+            Materials = new MaterialRepository(_context);
             Lessons = new GenericRepository<Lesson>(_context);
         }
 

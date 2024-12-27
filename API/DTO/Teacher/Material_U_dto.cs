@@ -1,12 +1,12 @@
 ﻿namespace API.DTO.Teacher
 {
-    public class Material_dto
+    public class Material_U_dto
     {
         public string Material_id { get; set; } = null!;
         public string Material_title { get; set; } = null!;
         public string Material_type { get; set; } = null!;
-        public string filepath { get; set; } = null!;
-        public DateTime Material_upload_date { get; set; }
+        public IFormFile File { get; set; } = null!;
+
 
     }
 }

@@ -12,7 +12,7 @@ namespace API.UOW
         IStudentRepository Students { get; }
         IRepository<AllowedStudent> AllowedStudents { get; }
         IRepository<Group> Groups { get; }
-        IRepository<Material> Materials { get; }
+        IMaterialRepository Materials { get; }
         IRepository<Lesson> Lessons { get; }
 
         Task<int> CompleteAsync();

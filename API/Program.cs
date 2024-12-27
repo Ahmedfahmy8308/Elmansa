@@ -3,7 +3,9 @@ using API.Data;
 using API.Data.Repositories;
 using API.Repositories;
 using API.UOW;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.EntityFrameworkCore;
 
 namespace API
@@ -15,6 +17,19 @@ namespace API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.Configure<IISServerOptions>(options =>
+            {
+                options.MaxRequestBodySize = 3l * 1024 * 1024 * 1024; // 2 GB
+            });
+
+            builder.Services.Configure<KestrelServerOptions>(options =>
+            {
+                options.Limits.MaxRequestBodySize = 3l * 1024 * 1024 * 1024; // 2 GB
+            });
+            builder.Services.Configure<FormOptions>(options =>
+            {
+                options.MultipartBodyLengthLimit = 3l * 1024 * 1024 * 1024; // 2 GB
+            });
             builder.Services.AddIdentity<AppUser, IdentityRole>(op =>
                 {
                     op.Password.RequireDigit = false;
@@ -68,7 +83,6 @@ namespace API
             app.UseStaticFiles();
             app.UseCors("MyPolicy");
             app.UseAuthorization();
-
 
             app.MapControllers();
 
